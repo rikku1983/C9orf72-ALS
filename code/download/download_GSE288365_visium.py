@@ -59,7 +59,9 @@ def main():
     OUTDIR.mkdir(parents=True, exist_ok=True)
     files = list_remote_files()
     if args.matrices:
-        files = [f for f in files if f.endswith(MATRIX_SUFFIXES) or "SeuratObject" in f]
+        # only the flat 10x files needed for a Scanpy/Squidpy load;
+        # SeuratObject.rds (200-500 MB each) are NOT used by the python pipeline
+        files = [f for f in files if f.endswith(MATRIX_SUFFIXES)]
     print(f"{GSE}: {len(files)} files to fetch into {OUTDIR}")
 
     for i, fname in enumerate(files, 1):
