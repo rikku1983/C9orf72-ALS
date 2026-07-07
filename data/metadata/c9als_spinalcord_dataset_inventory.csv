@@ -1,0 +1,7 @@
+accession,modality,tissue,design,n_samples,downloadable,relevance
+GSE288365,Spatial (10x Visium),"Cervical spinal cord (postmortem, human)",18 sections: 9 control + 4 sporadic ALS + 5 C9orf72 ALS; paired RNA + protein,36.0,"Yes — Visium matrices + tissue images + per-sample Seurat .rds (20 spot matrices, 18 Seurat objects)","PRIMARY — spatial, human spinal cord, explicit C9 vs sporadic vs control"
+GSE272626,Bulk RNA-seq,"Spinal cord (cervical/thoracic/lumbar, postmortem, human)","266 samples; ALS / ALS+FTD / CTL (NYGC ALS Consortium, includes C9 carriers via metadata)",266.0,Yes — per-sample counts.txt.gz,Bulk validation cohort — large N spinal cord to corroborate your bulk DEGs
+GSE271156,snRNA-seq,"Motor cortex (postmortem, human)",6 nuclei samples: sporadic ALS / ALS+FTD / control,6.0,Yes — per-sample count_matrix.tar.gz (RAW.tar),"Single-nucleus, but CORTEX not spinal cord; part of ALS-subtypes multiomics"
+GSE308462,Bulk RNA-seq,CSF / mixed (human),260 samples across CSF and tissue; ALS vs CTL multiomics classifier,260.0,Partial,Peripheral/CSF — off-target for spinal cord parenchyma
+GSE302319,scRNA-seq,iPSC-microglia xenografted into mouse brain,C9 repeat-expansion vs C9-KO vs isogenic control iPSC microglia,14.0,Yes,MODEL system (not human tissue); C9 microglia mechanism only
+bioRxiv 2025.08.26.672029,snRNA-seq,"Spinal cord (postmortem, human)",Comparative sporadic / C9orf72 / SOD1 ALS spinal cord snRNA-seq,,NOT YET — data embargoed ('deposited upon publication'),IDEAL single-nucleus spinal cord match — track for release / email authors

@@ -1,0 +1,42 @@
+# ---- Data: kept on disk, NOT committed (reproduced via code/download/) ----
+data/raw/
+data/processed/
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+# large data formats anywhere
+*.h5ad
+*.h5
+*.loom
+*.rds
+*.mtx
+*.mtx.gz
+*.tar
+*.tar.gz
+*.bam
+*.fastq
+*.fastq.gz
+*.tiff
+*.tif
+
+# ---- Large result objects (keep figures/tables, drop heavy binaries) ----
+results/**/*.h5ad
+results/**/*.rds
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+env_local/
+*.egg-info/
+
+# ---- R ----
+.Rhistory
+.RData
+.Rproj.user/
+
+# ---- OS / editor ----
+.DS_Store
+*.swp
+.vscode/
+.idea/

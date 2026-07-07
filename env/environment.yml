@@ -1,0 +1,21 @@
+name: c9als
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.13
+  - pip
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - seaborn
+  - scanpy
+  - anndata
+  - squidpy          # spatial (Visium) analysis
+  - leidenalg
+  - python-igraph
+  - scikit-learn
+  - h5py
+  - pip:
+      - scikit-misc  # for scanpy highly_variable_genes (flavor='seurat_v3')
