@@ -1,0 +1,41 @@
+sample,gsm,disease,condition
+A1,GSM8304327,ALS slow,sALS_slow
+A2,GSM8304328,control,control
+A3,GSM8304329,control,control
+A4,GSM8304330,control,control
+A5,GSM8304331,control,control
+B1,GSM8304332,ALS fast,sALS_fast
+B2,GSM8304333,control,control
+B3,GSM8304334,ALS slow,sALS_slow
+B4,GSM8304335,control,control
+B5,GSM8304336,control,control
+C1,GSM8304337,ALS fast,sALS_fast
+C2,GSM8304338,ALS patients with C9orf72,C9-ALS
+C3,GSM8304339,ALS fast,sALS_fast
+C4,GSM8304340,control,control
+C5,GSM8304341,ALS slow,sALS_slow
+D1,GSM8304342,control,control
+D2,GSM8304343,control,control
+D3,GSM8304344,ALS patients with C9orf72,C9-ALS
+D4,GSM8304345,ALS fast,sALS_fast
+D5,GSM8304346,ALS fast,sALS_fast
+E1,GSM8304347,control,control
+E2,GSM8304348,ALS slow,sALS_slow
+E3,GSM8304349,control,control
+E4,GSM8304350,control,control
+E5,GSM8304351,ALS slow,sALS_slow
+F1,GSM8304352,control,control
+F2,GSM8304353,control,control
+F3,GSM8304354,ALS patients with C9orf72,C9-ALS
+F4,GSM8304355,ALS fast,sALS_fast
+F5,GSM8304356,ALS fast,sALS_fast
+G1,GSM8304357,ALS slow,sALS_slow
+G2,GSM8304358,ALS fast,sALS_fast
+G3,GSM8304359,ALS slow,sALS_slow
+G4,GSM8304360,ALS fast,sALS_fast
+G5,GSM8304361,control,control
+H1,GSM8304362,control,control
+H2,GSM8304363,ALS slow,sALS_slow
+H3,GSM8304364,ALS slow,sALS_slow
+H4,GSM8304365,control,control
+H5,GSM8304366,ALS patients with C9orf72,C9-ALS
