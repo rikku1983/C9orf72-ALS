@@ -40,3 +40,10 @@ env_local/
 *.swp
 .vscode/
 .idea/
+
+# Large regenerable intermediate tables (reproducible from stage scripts 14-16; key ones saved as artifacts)
+results/tables/GSE268995_annotated_obs.parquet
+results/tables/GSE268995_author_meta.csv.gz
+results/tables/GSE268995_predicted_ADT.csv.gz
+results/tables/author_meta_merged_obs.csv
+results/tables/pseudobulk_GSE268995/
