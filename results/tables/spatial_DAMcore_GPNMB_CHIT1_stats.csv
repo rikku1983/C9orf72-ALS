@@ -1,0 +1,67 @@
+test,feature,region,mean_diff,n_pos,n,p
+ALS donors: anterolateral WM minus region,DAM_core,Anterior_horns,0.1986369788646698,9.0,9,0.00390625
+ALS donors: anterolateral WM minus region,DAM_core,Grey_matter,0.32787519693374634,9.0,9,0.00390625
+ALS donors: anterolateral WM minus region,DAM_core,Posterior_white_matter,0.26274335384368896,9.0,9,0.00390625
+ALS donors: anterolateral WM minus region,DAM_core,Meninges,0.1935316026210785,8.0,8,0.0078125
+ALS vs control (MWU donors),DAM_core,Anterior_horns,0.2502942979335785,,18,0.0026797147002071142
+C9 vs sALS (MWU donors),DAM_core,Anterior_horns,0.013936441391706467,,9,0.9047619104385376
+ALS vs control (MWU donors),DAM_core,Grey_matter,0.149372860789299,,18,0.017118245363235474
+C9 vs sALS (MWU donors),DAM_core,Grey_matter,0.03971119225025177,,9,0.5555555820465088
+ALS vs control (MWU donors),DAM_core,White_matter,0.34424862265586853,,18,0.0026797147002071142
+C9 vs sALS (MWU donors),DAM_core,White_matter,0.030273839831352234,,9,0.7301587462425232
+ALS vs control (MWU donors),DAM_core,Posterior_white_matter,0.13002502918243408,,18,0.04226010665297508
+C9 vs sALS (MWU donors),DAM_core,Posterior_white_matter,0.04358459264039993,,9,0.5555555820465088
+ALS donors: anterolateral WM minus region,GPNMB,Anterior_horns,0.45150458812713623,9.0,9,0.00390625
+ALS donors: anterolateral WM minus region,GPNMB,Grey_matter,0.6050567030906677,9.0,9,0.00390625
+ALS donors: anterolateral WM minus region,GPNMB,Posterior_white_matter,0.4972141981124878,8.0,9,0.01953125
+ALS donors: anterolateral WM minus region,GPNMB,Meninges,0.5438340902328491,8.0,8,0.0078125
+ALS vs control (MWU donors),GPNMB,Anterior_horns,0.21904699504375458,,18,0.00471819844096899
+C9 vs sALS (MWU donors),GPNMB,Anterior_horns,0.15218670666217804,,9,0.5555555820465088
+ALS vs control (MWU donors),GPNMB,Grey_matter,0.07483840733766556,,18,0.0035686283372342587
+C9 vs sALS (MWU donors),GPNMB,Grey_matter,0.05223044008016586,,9,0.190476194024086
+ALS vs control (MWU donors),GPNMB,White_matter,0.5574601888656616,,18,0.010444276034832
+C9 vs sALS (MWU donors),GPNMB,White_matter,0.3764241337776184,,9,0.2857142984867096
+ALS vs control (MWU donors),GPNMB,Posterior_white_matter,0.06949318945407867,,18,0.3772246241569519
+C9 vs sALS (MWU donors),GPNMB,Posterior_white_matter,0.05836677551269531,,9,0.2857142984867096
+ALS donors: anterolateral WM minus region,CHIT1,Anterior_horns,0.07009732723236084,7.0,9,0.01953125
+ALS donors: anterolateral WM minus region,CHIT1,Grey_matter,0.08942118287086487,8.0,9,0.01171875
+ALS donors: anterolateral WM minus region,CHIT1,Posterior_white_matter,0.06837765872478485,5.0,9,0.42578125
+ALS donors: anterolateral WM minus region,CHIT1,Meninges,0.09985470771789551,8.0,8,0.0078125
+ALS vs control (MWU donors),CHIT1,Anterior_horns,0.02355661801993847,,18,0.00179034483153373
+C9 vs sALS (MWU donors),CHIT1,Anterior_horns,0.025025496259331703,,9,0.5555555820465088
+ALS vs control (MWU donors),CHIT1,Grey_matter,0.004901304841041565,,18,0.059196896851062775
+C9 vs sALS (MWU donors),CHIT1,Grey_matter,0.00200666394084692,,9,0.7086240649223328
+ALS vs control (MWU donors),CHIT1,White_matter,0.08942557871341705,,18,0.013370799832046032
+C9 vs sALS (MWU donors),CHIT1,White_matter,0.050776660442352295,,9,0.5555555820465088
+ALS vs control (MWU donors),CHIT1,Posterior_white_matter,0.02021578885614872,,18,0.3303869664669037
+C9 vs sALS (MWU donors),CHIT1,Posterior_white_matter,0.002647062763571739,,9,0.7301587462425232
+ALS donors: anterolateral WM minus region,macro,Anterior_horns,1.937926643720884,9.0,9,0.00390625
+ALS donors: anterolateral WM minus region,macro,Grey_matter,2.9076633555290052,9.0,9,0.00390625
+ALS donors: anterolateral WM minus region,macro,Posterior_white_matter,2.3804047394810106,8.0,9,0.01953125
+ALS donors: anterolateral WM minus region,macro,Meninges,-1.1877891674556955,3.0,8,0.3125
+ALS vs control (MWU donors),macro,Anterior_horns,1.2702519440594098,,18,0.021684111364991994
+C9 vs sALS (MWU donors),macro,Anterior_horns,-0.14993104741348473,,9,0.9047619047619049
+ALS vs control (MWU donors),macro,Grey_matter,0.2806056251987874,,18,0.47992869214595724
+C9 vs sALS (MWU donors),macro,Grey_matter,-0.1789170962238824,,9,0.7301587301587302
+ALS vs control (MWU donors),macro,White_matter,2.8495761363250818,,18,0.003568628436933387
+C9 vs sALS (MWU donors),macro,White_matter,-0.04517262705280256,,9,0.7301587301587302
+ALS vs control (MWU donors),macro,Posterior_white_matter,0.46644364706821895,,18,0.5364994693194564
+C9 vs sALS (MWU donors),macro,Posterior_white_matter,-0.21782239132006054,,9,0.9047619047619049
+ALS donors: anterolateral WM minus region,micro,Anterior_horns,0.8438054375838254,9.0,9,0.00390625
+ALS donors: anterolateral WM minus region,micro,Grey_matter,1.7289218996790339,9.0,9,0.00390625
+ALS donors: anterolateral WM minus region,micro,Posterior_white_matter,1.2455035932410121,9.0,9,0.00390625
+ALS donors: anterolateral WM minus region,micro,Meninges,2.2047352280203416,8.0,8,0.0078125
+ALS vs control (MWU donors),micro,Anterior_horns,1.076026654386713,,18,0.013418657920497472
+C9 vs sALS (MWU donors),micro,Anterior_horns,-0.6192218443182216,,9,0.7301587301587302
+ALS vs control (MWU donors),micro,Grey_matter,0.3811176218530923,,18,0.1577043874630777
+C9 vs sALS (MWU donors),micro,Grey_matter,-0.6741837002819531,,9,0.06349206349206349
+ALS vs control (MWU donors),micro,White_matter,1.3096993381518245,,18,0.0014784647972275091
+C9 vs sALS (MWU donors),micro,White_matter,-0.26011643821754094,,9,0.7301587301587302
+ALS vs control (MWU donors),micro,Posterior_white_matter,0.20300488901242608,,18,0.5364994693194564
+C9 vs sALS (MWU donors),micro,Posterior_white_matter,-0.339887394357254,,9,0.5555555555555556
+within-section rho vs DAM core: ALS vs control sections (MWU),GPNMB,whole section,0.06759178031335408,,20,0.04515456962427901
+within-section rho vs DAM core: ALS vs control sections (MWU),CHIT1,whole section,0.04177696095145457,,20,0.014019277113959953
+"donor-level Spearman vs DAM core, anterolateral WM (all donors)",GPNMB,White_matter,0.8617131062951496,,18,4.317684006760915e-06
+"donor-level Spearman vs DAM core, anterolateral WM (all donors)",CHIT1,White_matter,0.8146619567834931,,18,3.842912961408453e-05
+"donor-level Spearman vs DAM core, anterolateral WM (ALS donors)",GPNMB,White_matter,0.8166666666666667,,9,0.0072247852463587885
+"donor-level Spearman vs DAM core, anterolateral WM (ALS donors)",CHIT1,White_matter,0.75,,9,0.019942126131992536
