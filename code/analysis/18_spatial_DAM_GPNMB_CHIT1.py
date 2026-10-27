@@ -131,7 +131,7 @@ fig.savefig(f"{FIG}/spatial_DAM_GPNMB_CHIT1_maps.png",dpi=300); plt.close(fig)
 # ---- Figure 2: donor-level quantification ----
 fig2,ax2=plt.subplots(2,3,figsize=(7.2,5.0)); fig2.subplots_adjust(left=0.09,right=0.98,top=0.93,bottom=0.1,hspace=0.75,wspace=0.42)
 off={"control":-0.25,"sALS":0,"C9-ALS":0.25}; rng=np.random.default_rng(0)
-YL={"DAM_core":"DAM core score","GPNMB":"GPNMB (log-norm)","CHIT1":"CHIT1 (log-norm)","macro":"Macrophage fraction"}
+YL={"DAM_core":"DAM core score","GPNMB":"GPNMB (log-norm)","CHIT1":"CHIT1 (log-norm)","macro":"Macrophages (% of spot cells)"}
 TT=["Highest in anterolateral WM","GPNMB: spares dorsal columns","CHIT1: same pattern","Macrophages track the signal"]
 for k,f in enumerate(["DAM_core","GPNMB","CHIT1","macro"]):
     ax=ax2.flat[k]
