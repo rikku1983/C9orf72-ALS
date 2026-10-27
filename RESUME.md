@@ -8,6 +8,22 @@ This file is the single entry point to resume. Read it top to bottom for full co
 
 ---
 
+
+## !! ANNOTATION CORRECTION (session 9) -- READ BEFORE USING STAGES 05-08 !!
+Our marker-score `region` column is UNRELIABLE. Only 15% of spots we labelled
+'ventral_horn_MN' lie in the authors' Anterior_horns (33% white matter, 21% meninges).
+USE `auth_manual` (authors' manual histology) FOR ALL REGION WORK.
+Recomputed on correct anatomy (stages 18/19/19b):
+  - SURVIVES: TNF-alpha/NF-kB C9-vs-sALS (anterior horn NES +1.86 FDR 0.014;
+    other grey matter NES +2.23 FDR <0.001). Inflammatory Response (ant. horn FDR 0.009).
+    Hypoxia (grey matter FDR <0.001). IL-6/JAK/STAT3 (ant. horn FDR 0.016).
+  - DOES NOT SURVIVE: Unfolded Protein Response + mTORC1 (were FDR 0.000 under the wrong
+    label, now FDR 0.21 in true anterior horn) -> the 'proteostasis' story was an artifact.
+  - Gene-level C9-vs-sALS: 0 genes FDR<0.05 in true anterior horns (CANX padj 0.0007 -> 0.164).
+    39 genes in anterolateral WM, 63 in posterior WM, 2 in other grey matter.
+  - DAM/GPNMB/CHIT1 peak = ANTEROLATERAL WHITE MATTER, not ventral horn; dorsal columns spared.
+REPORT.md still carries the OLD 'ventral horn' labels and must be revised.
+
 ## 1. Research goal
 Decode the mechanism of action (MOA) by which the **C9orf72 hexanucleotide repeat expansion**
 drives ALS progression — identify genes / pathways / cell populations mediating C9-specific
