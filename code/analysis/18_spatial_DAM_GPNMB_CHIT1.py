@@ -60,10 +60,12 @@ z=(df[DAMCORE]-df[DAMCORE].mean())/df[DAMCORE].std(); df["DAM_core"]=z.mean(axis
 with h5py.File(FA,"r") as h:
     obs=h["obs"]; names=obs[obs.attrs["_index"]][:].astype(str)
     assert (names==df.spot.values).all()
-    df["anat"]=dec(obs["auth_manual"]); df["macro"]=obs["auth_norm_ct_Macrophages"][:]; df["micro"]=obs["auth_norm_ct_Microglia"][:]
+    df["anat"]=dec(obs["auth_manual"]); df["macro"]=obs["auth_norm_ct_Macrophages"][:]
+    df["micro"]=obs["auth_norm_ct_Microglia"][:]+obs["auth_norm_ct_ProliferatingMicroglia"][:]  # homeostatic + proliferating
+    df["myeloid"]=df["micro"]+df["macro"]
 
 # ---- donor x anatomy means + stats ----
-d2=df[df.anat.isin(ANAT)]; FEAT2=FEAT+["macro","micro"]
+d2=df[df.anat.isin(ANAT)]; FEAT2=FEAT+["macro","micro","myeloid"]
 dra=d2.groupby(["donor_id","condition","anat"],observed=True)[FEAT2].mean().reset_index()
 dra.to_csv(f"{TAB}/spatial_DAMcore_GPNMB_CHIT1_donor_region.csv",index=False)
 rows=[]
@@ -132,10 +134,10 @@ fig.savefig(f"{FIG}/spatial_DAM_GPNMB_CHIT1_maps.png",dpi=300); plt.close(fig)
 fig2,ax2=plt.subplots(2,4,figsize=(9.6,5.2)); fig2.subplots_adjust(left=0.07,right=0.99,top=0.92,bottom=0.12,hspace=0.8,wspace=0.45)
 off={"control":-0.25,"sALS":0,"C9-ALS":0.25}; rng=np.random.default_rng(0)
 YL={"DAM_core":"DAM core score","GPNMB":"GPNMB (log-norm)","CHIT1":"CHIT1 (log-norm)",
-    "macro":"Macrophages (% of spot cells)","micro":"Microglia (% of spot cells)"}
+    "macro":"Macrophages (% of spot cells)","micro":"Microglia (% of spot cells)","myeloid":"Total myeloid (% of spot cells)"}
 TT={"DAM_core":"DAM program","GPNMB":"GPNMB","CHIT1":"CHIT1",
-    "macro":"Macrophages (C2L)","micro":"Microglia (C2L)"}
-panels=["DAM_core","GPNMB","CHIT1","macro","micro"]
+    "macro":"Macrophages (C2L)","micro":"Microglia, incl. proliferating","myeloid":"Total myeloid (micro+macro)"}
+panels=["DAM_core","GPNMB","CHIT1","macro","micro","myeloid"]
 for k,f in enumerate(panels):
     ax=ax2.flat[k]
     for i,rg in enumerate(REG4):
@@ -148,7 +150,7 @@ for k,f in enumerate(panels):
     ax.set_ylabel(YL[f]); ax.set_title(TT[f],loc="left"); ax.margins(0.05)
 ax2.flat[0].legend(handles=[Line2D([0],[0],marker="o",lw=0,color=PAL[c],label=c,ms=4) for c in ORDER],
                    frameon=False,fontsize=6,loc="upper left",handletextpad=0.2)
-ax=ax2.flat[5]
+ax=ax2.flat[6]
 for i,c in enumerate(ORDER):
     v=ws[(ws.gene=="GPNMB")&(ws.condition==c)].rho.values
     ax.scatter(i+rng.uniform(-0.08,0.08,len(v)),v,s=14,color=PAL[c],linewidths=0,zorder=3)
@@ -156,7 +158,7 @@ for i,c in enumerate(ORDER):
 ax.axhline(0,color="grey",lw=0.6,ls=":"); ax.set_xticks(range(3))
 ax.set_xticklabels(ORDER,rotation=35,ha="right",rotation_mode="anchor",fontsize=6)
 ax.set_ylabel("Spearman rho, GPNMB vs\nDAM core (per section)"); ax.set_title("Coupling stronger in ALS",loc="left"); ax.margins(0.08)
-ax=ax2.flat[6]
+ax=ax2.flat[7]
 for c in ORDER:
     qq=q[q.condition==c]; ax.scatter(qq.DAM_core,qq.GPNMB,s=18,color=PAL[c],linewidths=0,zorder=3)
 r_all=stats.spearmanr(q.DAM_core,q.GPNMB)[0]
@@ -164,7 +166,6 @@ r_als=stats.spearmanr(q[q.condition!="control"].DAM_core,q[q.condition!="control
 ax.text(0.03,0.97,f"all rho={r_all:.2f}\nALS only rho={r_als:.2f}",transform=ax.transAxes,va="top",fontsize=7)
 ax.set_xlabel("DAM core score"); ax.set_ylabel("GPNMB (log-norm)")
 ax.set_title("Donor level, anterolateral WM",loc="left"); ax.margins(0.08)
-ax2.flat[7].axis("off")
-for a_,L in zip(ax2.flat[:7],"abcdefg"): a_.text(-0.3,1.1,L,transform=a_.transAxes,fontweight="bold",fontsize=9,va="bottom")
+for a_,L in zip(ax2.flat[:8],"abcdefgh"): a_.text(-0.3,1.1,L,transform=a_.transAxes,fontweight="bold",fontsize=9,va="bottom")
 fig2.savefig(f"{FIG}/spatial_DAM_GPNMB_CHIT1_quant.png",dpi=300); plt.close(fig2)
 print("stage 18 done")
