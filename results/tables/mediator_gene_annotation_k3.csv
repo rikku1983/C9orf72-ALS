@@ -1,0 +1,119 @@
+gene,cluster_k3,spatial_status,bulk118_ward_k2,bulk118_ward_k3,bulk118_ward_k4,bulk118_ward_k5,bulk118_ward_k6,spatial_module_5way,is_ribosomal_protein_gene
+ADORA3,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,M5 Myeloid/DAM,False
+ANO6,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-a,Ribosomal-a,M5 Myeloid/DAM,False
+ANXA2,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-a,Ribosomal-a,M5 Myeloid/DAM,False
+APOBR,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,M5 Myeloid/DAM,False
+APOC1,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,M5 Myeloid/DAM,False
+ARRB2,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,M5 Myeloid/DAM,False
+C1QC,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,M5 Myeloid/DAM,False
+C3AR1,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,M5 Myeloid/DAM,False
+CAPG,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,M5 Myeloid/DAM,False
+CD300A,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,M5 Myeloid/DAM,False
+CD53,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,M5 Myeloid/DAM,False
+CD63,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-a,Ribosomal-a,M5 Myeloid/DAM,False
+CD68,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,M5 Myeloid/DAM,False
+CEBPA,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,M5 Myeloid/DAM,False
+CHIT1,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,M5 Myeloid/DAM,False
+CTSD,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,M5 Myeloid/DAM,False
+CTSS,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,M5 Myeloid/DAM,False
+CYBA,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,M5 Myeloid/DAM,False
+DSP,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-a,Ribosomal-a,M4 Endothelial,False
+EMP3,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-a,Ribosomal-a,M5 Myeloid/DAM,False
+FXYD5,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,M5 Myeloid/DAM,False
+GPNMB,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,M5 Myeloid/DAM,False
+GRN,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,M5 Myeloid/DAM,False
+HCK,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,M5 Myeloid/DAM,False
+IFI30,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,M5 Myeloid/DAM,False
+IQGAP2,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,M5 Myeloid/DAM,False
+ITGB2,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,M5 Myeloid/DAM,False
+LAPTM5,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,M5 Myeloid/DAM,False
+LGALS3,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,M5 Myeloid/DAM,False
+LGALS9,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,M5 Myeloid/DAM,False
+NBEAL2,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,M4 Endothelial,False
+NCF2,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,M5 Myeloid/DAM,False
+NCKAP1L,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,M5 Myeloid/DAM,False
+PAPOLA,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-b,Ribosomal-b,M4 Endothelial,False
+PIK3R5,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,M5 Myeloid/DAM,False
+PLA2G7,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,M5 Myeloid/DAM,False
+PLAU,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,M5 Myeloid/DAM,False
+PYCARD,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,M5 Myeloid/DAM,False
+S100A11,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-a,Ribosomal-a,M5 Myeloid/DAM,False
+SIGLEC8,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,M5 Myeloid/DAM,False
+SLC37A2,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,M5 Myeloid/DAM,False
+SLC38A2,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-b,Ribosomal-b,M5 Myeloid/DAM,False
+SLC5A3,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-b,Ribosomal-b,M5 Myeloid/DAM,False
+SOAT1,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,M5 Myeloid/DAM,False
+SOD2,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,M5 Myeloid/DAM,False
+SPI1,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,M5 Myeloid/DAM,False
+STX3,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,M4 Endothelial,False
+SYK,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,M5 Myeloid/DAM,False
+TNFRSF14,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,M5 Myeloid/DAM,False
+TREM2,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,M5 Myeloid/DAM,False
+TYROBP,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,M5 Myeloid/DAM,False
+WDFY4,Myeloid/DAM,"clustered (on panel, detected)",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,M5 Myeloid/DAM,False
+B3GAT2,Astrocyte,"clustered (on panel, detected)",B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,M2 Astrocyte,False
+BRINP1,Astrocyte,"clustered (on panel, detected)",B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,M2 Astrocyte,False
+CHCHD2,Astrocyte,"clustered (on panel, detected)",B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,M3 Mixed/oligo-leaning,False
+CKB,Astrocyte,"clustered (on panel, detected)",B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,M2 Astrocyte,False
+CNTN1,Astrocyte,"clustered (on panel, detected)",B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,M3 Mixed/oligo-leaning,False
+DAAM2,Astrocyte,"clustered (on panel, detected)",B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,M2 Astrocyte,False
+DCLK2,Astrocyte,"clustered (on panel, detected)",B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,M1 Oligodendrocyte/myelin,False
+FAM181B,Astrocyte,"clustered (on panel, detected)",B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,M2 Astrocyte,False
+GABARAPL2,Astrocyte,"clustered (on panel, detected)",B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,M2 Astrocyte,False
+GJA1,Astrocyte,"clustered (on panel, detected)",B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,M2 Astrocyte,False
+GMPR,Astrocyte,"clustered (on panel, detected)",B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,M2 Astrocyte,False
+GPR37L1,Astrocyte,"clustered (on panel, detected)",B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,M2 Astrocyte,False
+HEPACAM,Astrocyte,"clustered (on panel, detected)",B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,M2 Astrocyte,False
+IL17D,Astrocyte,"clustered (on panel, detected)",B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,M2 Astrocyte,False
+ITM2C,Astrocyte,"clustered (on panel, detected)",B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,M2 Astrocyte,False
+LIX1,Astrocyte,"clustered (on panel, detected)",B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,M1 Oligodendrocyte/myelin,False
+NADK2,Astrocyte,"clustered (on panel, detected)",B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,M2 Astrocyte,False
+NDRG2,Astrocyte,"clustered (on panel, detected)",B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,M2 Astrocyte,False
+NFIX,Astrocyte,"clustered (on panel, detected)",B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,M2 Astrocyte,False
+P2RY1,Astrocyte,"clustered (on panel, detected)",B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,M2 Astrocyte,False
+PRKX,Astrocyte,"clustered (on panel, detected)",B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,M3 Mixed/oligo-leaning,False
+PSD2,Astrocyte,"clustered (on panel, detected)",B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,M2 Astrocyte,False
+PYCR2,Astrocyte,"clustered (on panel, detected)",B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,M2 Astrocyte,False
+PYGM,Astrocyte,"clustered (on panel, detected)",B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,M2 Astrocyte,False
+SDC3,Astrocyte,"clustered (on panel, detected)",B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,M2 Astrocyte,False
+SLC24A4,Astrocyte,"clustered (on panel, detected)",B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,M2 Astrocyte,False
+SLC38A1,Astrocyte,"clustered (on panel, detected)",B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,M3 Mixed/oligo-leaning,False
+SMOX,Astrocyte,"clustered (on panel, detected)",B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,M2 Astrocyte,False
+TMEM47,Astrocyte,"clustered (on panel, detected)",B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,M2 Astrocyte,False
+TRIL,Astrocyte,"clustered (on panel, detected)",B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,M2 Astrocyte,False
+ADD1,Oligodendrocyte/myelin,"clustered (on panel, detected)",B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Residual,M3 Mixed/oligo-leaning,False
+APBB1,Oligodendrocyte/myelin,"clustered (on panel, detected)",B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,M1 Oligodendrocyte/myelin,False
+CARNS1,Oligodendrocyte/myelin,"clustered (on panel, detected)",B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,M1 Oligodendrocyte/myelin,False
+CIRBP,Oligodendrocyte/myelin,"clustered (on panel, detected)",B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,M1 Oligodendrocyte/myelin,False
+CMTM5,Oligodendrocyte/myelin,"clustered (on panel, detected)",B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,M1 Oligodendrocyte/myelin,False
+CORO2B,Oligodendrocyte/myelin,"clustered (on panel, detected)",B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,M1 Oligodendrocyte/myelin,False
+DNHD1,Oligodendrocyte/myelin,"clustered (on panel, detected)",B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Residual,M2 Astrocyte,False
+EDIL3,Oligodendrocyte/myelin,"clustered (on panel, detected)",B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,M3 Mixed/oligo-leaning,False
+GPR37,Oligodendrocyte/myelin,"clustered (on panel, detected)",B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,M1 Oligodendrocyte/myelin,False
+IGSF8,Oligodendrocyte/myelin,"clustered (on panel, detected)",B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,M1 Oligodendrocyte/myelin,False
+KLK6,Oligodendrocyte/myelin,"clustered (on panel, detected)",B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,M1 Oligodendrocyte/myelin,False
+LDB3,Oligodendrocyte/myelin,"clustered (on panel, detected)",B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,M1 Oligodendrocyte/myelin,False
+LLGL1,Oligodendrocyte/myelin,"clustered (on panel, detected)",B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,M1 Oligodendrocyte/myelin,False
+LSS,Oligodendrocyte/myelin,"clustered (on panel, detected)",B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Residual,M1 Oligodendrocyte/myelin,False
+MAPK8IP2,Oligodendrocyte/myelin,"clustered (on panel, detected)",B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,M3 Mixed/oligo-leaning,False
+MYRF,Oligodendrocyte/myelin,"clustered (on panel, detected)",B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,M1 Oligodendrocyte/myelin,False
+NFASC,Oligodendrocyte/myelin,"clustered (on panel, detected)",B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Residual,M1 Oligodendrocyte/myelin,False
+OPALIN,Oligodendrocyte/myelin,"clustered (on panel, detected)",B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,M1 Oligodendrocyte/myelin,False
+PAQR4,Oligodendrocyte/myelin,"clustered (on panel, detected)",B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,M1 Oligodendrocyte/myelin,False
+PLLP,Oligodendrocyte/myelin,"clustered (on panel, detected)",B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,M1 Oligodendrocyte/myelin,False
+PPP1R16B,Oligodendrocyte/myelin,"clustered (on panel, detected)",B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,M1 Oligodendrocyte/myelin,False
+SLC24A2,Oligodendrocyte/myelin,"clustered (on panel, detected)",B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,M3 Mixed/oligo-leaning,False
+AC006011.2,Ribosomal,absent from probe panel by design,B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-b,Ribosomal-b,not detected,False
+RPL23,Ribosomal,absent from probe panel by design,B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-a,Ribosomal-a,not detected,True
+RPL24P4,Ribosomal,absent from probe panel by design,B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-b,Ribosomal-b,not detected,True
+RPL26,Ribosomal,absent from probe panel by design,B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-a,Ribosomal-a,not detected,True
+RPL27,Ribosomal,absent from probe panel by design,B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-a,Ribosomal-a,not detected,True
+RPL7A,Ribosomal,absent from probe panel by design,B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-a,Ribosomal-a,not detected,True
+RPS10,Ribosomal,absent from probe panel by design,B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-a,Ribosomal-a,not detected,True
+RPS15A,Ribosomal,absent from probe panel by design,B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-a,Ribosomal-a,not detected,True
+RPS17,Ribosomal,absent from probe panel by design,B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-a,Ribosomal-a,not detected,True
+ALOX15B,Under LOD,"on probe panel, below detection threshold",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,not detected,False
+CHRNA1,Under LOD,"on probe panel, below detection threshold",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,not detected,False
+DPEP2,Under LOD,"on probe panel, below detection threshold",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,not detected,False
+OTOA,Under LOD,"on probe panel, below detection threshold",B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,not detected,False
+GPX1,Not on panel,absent from probe panel by design,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,not detected,False
