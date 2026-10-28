@@ -1,119 +1,119 @@
-gene,ward_k2,ward_k3,ward_k4,ward_k5,ward_k6,avg_linkage_k5,spatial_module,in_visium_panel
-NFIX,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True
-MAPK8IP2,B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,avg_c2,M3 Mixed/oligo-leaning,True
-GABARAPL2,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True
-CAPG,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True
-CYBA,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True
-SOAT1,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True
-PYGM,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True
-BRINP1,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True
-ADD1,B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Residual,avg_c1,M3 Mixed/oligo-leaning,True
-SMOX,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True
-FXYD5,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True
-PAPOLA,B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-b,Ribosomal-b,avg_c3,M4 Endothelial,True
-TREM2,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True
-DSP,B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-a,Ribosomal-a,avg_c5,M4 Endothelial,True
-CIRBP,B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,avg_c2,M1 Oligodendrocyte/myelin,True
-HCK,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True
-PPP1R16B,B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,avg_c2,M1 Oligodendrocyte/myelin,True
-PLLP,B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,avg_c2,M1 Oligodendrocyte/myelin,True
-PYCARD,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True
-CORO2B,B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,avg_c2,M1 Oligodendrocyte/myelin,True
-SIGLEC8,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True
-SLC38A1,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M3 Mixed/oligo-leaning,True
-SOD2,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True
-B3GAT2,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True
-NCF2,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True
-CTSD,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True
-LDB3,B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,avg_c2,M1 Oligodendrocyte/myelin,True
-PLAU,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True
-NCKAP1L,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True
-RPS10,B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-a,Ribosomal-a,avg_c4,,False
-MYRF,B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,avg_c2,M1 Oligodendrocyte/myelin,True
-RPL23,B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-a,Ribosomal-a,avg_c4,,False
-WDFY4,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True
-CD68,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True
-RPL27,B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-a,Ribosomal-a,avg_c4,,False
-LLGL1,B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,avg_c2,M1 Oligodendrocyte/myelin,True
-LGALS3,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True
-CHIT1,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True
-SLC38A2,B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-b,Ribosomal-b,avg_c3,M5 Myeloid/DAM,True
-RPS15A,B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-a,Ribosomal-a,avg_c4,,False
-SLC37A2,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True
-CD63,B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-a,Ribosomal-a,avg_c4,M5 Myeloid/DAM,True
-ITM2C,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True
-GMPR,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True
-CHRNA1,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,,False
-ARRB2,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True
-PIK3R5,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True
-EMP3,B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-a,Ribosomal-a,avg_c4,M5 Myeloid/DAM,True
-CD53,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True
-PYCR2,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True
-LIX1,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M1 Oligodendrocyte/myelin,True
-PSD2,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True
-PLA2G7,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True
-DAAM2,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True
-TMEM47,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True
-NADK2,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True
-GJA1,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True
-OTOA,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,,False
-SLC24A2,B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,avg_c2,M3 Mixed/oligo-leaning,True
-C1QC,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True
-ITGB2,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True
-LSS,B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Residual,avg_c1,M1 Oligodendrocyte/myelin,True
-NBEAL2,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M4 Endothelial,True
-RPL26,B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-a,Ribosomal-a,avg_c4,,False
-PAQR4,B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,avg_c2,M1 Oligodendrocyte/myelin,True
-LAPTM5,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True
-SDC3,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True
-IGSF8,B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,avg_c2,M1 Oligodendrocyte/myelin,True
-CTSS,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True
-S100A11,B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-a,Ribosomal-a,avg_c4,M5 Myeloid/DAM,True
-NFASC,B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Residual,avg_c1,M1 Oligodendrocyte/myelin,True
-EDIL3,B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,avg_c2,M3 Mixed/oligo-leaning,True
-SYK,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True
-HEPACAM,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True
-NDRG2,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True
-CMTM5,B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,avg_c2,M1 Oligodendrocyte/myelin,True
-CKB,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True
-APBB1,B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,avg_c2,M1 Oligodendrocyte/myelin,True
-STX3,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M4 Endothelial,True
-DPEP2,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,,False
-KLK6,B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,avg_c2,M1 Oligodendrocyte/myelin,True
-CD300A,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True
-LGALS9,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True
-P2RY1,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True
-GPR37L1,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True
-DCLK2,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M1 Oligodendrocyte/myelin,True
-GPR37,B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,avg_c2,M1 Oligodendrocyte/myelin,True
-C3AR1,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True
-IL17D,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True
-CARNS1,B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,avg_c2,M1 Oligodendrocyte/myelin,True
-ANO6,B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-a,Ribosomal-a,avg_c4,M5 Myeloid/DAM,True
-DNHD1,B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Residual,avg_c1,M2 Astrocyte,True
-ALOX15B,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,,False
-RPL24P4,B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-b,Ribosomal-b,avg_c3,,False
-FAM181B,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True
-ANXA2,B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-a,Ribosomal-a,avg_c4,M5 Myeloid/DAM,True
-RPS17,B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-a,Ribosomal-a,avg_c4,,False
-PRKX,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c1,M3 Mixed/oligo-leaning,True
-APOBR,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True
-OPALIN,B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,avg_c2,M1 Oligodendrocyte/myelin,True
-SLC5A3,B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-b,Ribosomal-b,avg_c3,M5 Myeloid/DAM,True
-IFI30,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True
-GPX1,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,,False
-CEBPA,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True
-TRIL,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True
-TNFRSF14,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True
-AC006011.2,B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-b,Ribosomal-b,avg_c3,,False
-RPL7A,B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-a,Ribosomal-a,avg_c4,,False
-ADORA3,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True
-SPI1,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True
-SLC24A4,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c1,M2 Astrocyte,True
-APOC1,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True
-GRN,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True
-TYROBP,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True
-CNTN1,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M3 Mixed/oligo-leaning,True
-CHCHD2,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M3 Mixed/oligo-leaning,True
-GPNMB,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True
-IQGAP2,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True
+gene,ward_k2,ward_k3,ward_k4,ward_k5,ward_k6,avg_linkage_k5,spatial_module,in_visium_panel,core_module
+NFIX,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True,Astrocyte
+MAPK8IP2,B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,avg_c2,M3 Mixed/oligo-leaning,True,Oligodendrocyte/myelin
+GABARAPL2,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True,Astrocyte
+CAPG,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True,Myeloid/DAM
+CYBA,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True,Myeloid/DAM
+SOAT1,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True,Myeloid/DAM
+PYGM,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True,Astrocyte
+BRINP1,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True,Astrocyte
+ADD1,B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Residual,avg_c1,M3 Mixed/oligo-leaning,True,unassigned
+SMOX,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True,Astrocyte
+FXYD5,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True,Myeloid/DAM
+PAPOLA,B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-b,Ribosomal-b,avg_c3,M4 Endothelial,True,unassigned
+TREM2,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True,Myeloid/DAM
+DSP,B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-a,Ribosomal-a,avg_c5,M4 Endothelial,True,Ribosomal-a
+CIRBP,B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,avg_c2,M1 Oligodendrocyte/myelin,True,Oligodendrocyte/myelin
+HCK,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True,Myeloid/DAM
+PPP1R16B,B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,avg_c2,M1 Oligodendrocyte/myelin,True,Oligodendrocyte/myelin
+PLLP,B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,avg_c2,M1 Oligodendrocyte/myelin,True,Oligodendrocyte/myelin
+PYCARD,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True,Myeloid/DAM
+CORO2B,B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,avg_c2,M1 Oligodendrocyte/myelin,True,Oligodendrocyte/myelin
+SIGLEC8,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True,Myeloid/DAM
+SLC38A1,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M3 Mixed/oligo-leaning,True,Astrocyte
+SOD2,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True,Myeloid/DAM
+B3GAT2,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True,Astrocyte
+NCF2,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True,Myeloid/DAM
+CTSD,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True,Myeloid/DAM
+LDB3,B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,avg_c2,M1 Oligodendrocyte/myelin,True,Oligodendrocyte/myelin
+PLAU,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True,Myeloid/DAM
+NCKAP1L,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True,Myeloid/DAM
+RPS10,B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-a,Ribosomal-a,avg_c4,,False,Ribosomal-a
+MYRF,B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,avg_c2,M1 Oligodendrocyte/myelin,True,Oligodendrocyte/myelin
+RPL23,B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-a,Ribosomal-a,avg_c4,,False,Ribosomal-a
+WDFY4,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True,Myeloid/DAM
+CD68,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True,Myeloid/DAM
+RPL27,B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-a,Ribosomal-a,avg_c4,,False,Ribosomal-a
+LLGL1,B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,avg_c2,M1 Oligodendrocyte/myelin,True,Oligodendrocyte/myelin
+LGALS3,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True,Myeloid/DAM
+CHIT1,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True,Myeloid/DAM
+SLC38A2,B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-b,Ribosomal-b,avg_c3,M5 Myeloid/DAM,True,unassigned
+RPS15A,B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-a,Ribosomal-a,avg_c4,,False,Ribosomal-a
+SLC37A2,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True,Myeloid/DAM
+CD63,B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-a,Ribosomal-a,avg_c4,M5 Myeloid/DAM,True,Ribosomal-a
+ITM2C,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True,Astrocyte
+GMPR,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True,Astrocyte
+CHRNA1,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,,False,Myeloid/DAM
+ARRB2,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True,Myeloid/DAM
+PIK3R5,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True,Myeloid/DAM
+EMP3,B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-a,Ribosomal-a,avg_c4,M5 Myeloid/DAM,True,Ribosomal-a
+CD53,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True,Myeloid/DAM
+PYCR2,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True,Astrocyte
+LIX1,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M1 Oligodendrocyte/myelin,True,Astrocyte
+PSD2,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True,Astrocyte
+PLA2G7,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True,Myeloid/DAM
+DAAM2,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True,Astrocyte
+TMEM47,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True,Astrocyte
+NADK2,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True,Astrocyte
+GJA1,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True,Astrocyte
+OTOA,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,,False,Myeloid/DAM
+SLC24A2,B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,avg_c2,M3 Mixed/oligo-leaning,True,Oligodendrocyte/myelin
+C1QC,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True,Myeloid/DAM
+ITGB2,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True,Myeloid/DAM
+LSS,B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Residual,avg_c1,M1 Oligodendrocyte/myelin,True,unassigned
+NBEAL2,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M4 Endothelial,True,Myeloid/DAM
+RPL26,B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-a,Ribosomal-a,avg_c4,,False,Ribosomal-a
+PAQR4,B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,avg_c2,M1 Oligodendrocyte/myelin,True,Oligodendrocyte/myelin
+LAPTM5,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True,Myeloid/DAM
+SDC3,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True,Astrocyte
+IGSF8,B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,avg_c2,M1 Oligodendrocyte/myelin,True,Oligodendrocyte/myelin
+CTSS,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True,Myeloid/DAM
+S100A11,B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-a,Ribosomal-a,avg_c4,M5 Myeloid/DAM,True,Ribosomal-a
+NFASC,B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Residual,avg_c1,M1 Oligodendrocyte/myelin,True,unassigned
+EDIL3,B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,avg_c2,M3 Mixed/oligo-leaning,True,Oligodendrocyte/myelin
+SYK,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True,Myeloid/DAM
+HEPACAM,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True,Astrocyte
+NDRG2,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True,Astrocyte
+CMTM5,B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,avg_c2,M1 Oligodendrocyte/myelin,True,Oligodendrocyte/myelin
+CKB,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True,Astrocyte
+APBB1,B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,avg_c2,M1 Oligodendrocyte/myelin,True,Oligodendrocyte/myelin
+STX3,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M4 Endothelial,True,Myeloid/DAM
+DPEP2,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,,False,Myeloid/DAM
+KLK6,B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,avg_c2,M1 Oligodendrocyte/myelin,True,Oligodendrocyte/myelin
+CD300A,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True,Myeloid/DAM
+LGALS9,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True,Myeloid/DAM
+P2RY1,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True,Astrocyte
+GPR37L1,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True,Astrocyte
+DCLK2,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M1 Oligodendrocyte/myelin,True,Astrocyte
+GPR37,B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,avg_c2,M1 Oligodendrocyte/myelin,True,Oligodendrocyte/myelin
+C3AR1,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True,Myeloid/DAM
+IL17D,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True,Astrocyte
+CARNS1,B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,avg_c2,M1 Oligodendrocyte/myelin,True,Oligodendrocyte/myelin
+ANO6,B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-a,Ribosomal-a,avg_c4,M5 Myeloid/DAM,True,Ribosomal-a
+DNHD1,B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Residual,avg_c1,M2 Astrocyte,True,unassigned
+ALOX15B,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,,False,Myeloid/DAM
+RPL24P4,B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-b,Ribosomal-b,avg_c3,,False,unassigned
+FAM181B,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True,Astrocyte
+ANXA2,B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-a,Ribosomal-a,avg_c4,M5 Myeloid/DAM,True,Ribosomal-a
+RPS17,B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-a,Ribosomal-a,avg_c4,,False,Ribosomal-a
+PRKX,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c1,M3 Mixed/oligo-leaning,True,Astrocyte
+APOBR,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True,Myeloid/DAM
+OPALIN,B_glial,Oligo/myelin,Oligo/myelin,Oligo/myelin,Oligo/myelin,avg_c2,M1 Oligodendrocyte/myelin,True,Oligodendrocyte/myelin
+SLC5A3,B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-b,Ribosomal-b,avg_c3,M5 Myeloid/DAM,True,unassigned
+IFI30,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True,Myeloid/DAM
+GPX1,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,,False,Myeloid/DAM
+CEBPA,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True,Myeloid/DAM
+TRIL,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M2 Astrocyte,True,Astrocyte
+TNFRSF14,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True,Myeloid/DAM
+AC006011.2,B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-b,Ribosomal-b,avg_c3,,False,unassigned
+RPL7A,B_myeloid,Myeloid/DAM,Ribosomal,Ribosomal-a,Ribosomal-a,avg_c4,,False,Ribosomal-a
+ADORA3,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True,Myeloid/DAM
+SPI1,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True,Myeloid/DAM
+SLC24A4,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c1,M2 Astrocyte,True,Astrocyte
+APOC1,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True,Myeloid/DAM
+GRN,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True,Myeloid/DAM
+TYROBP,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True,Myeloid/DAM
+CNTN1,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M3 Mixed/oligo-leaning,True,Astrocyte
+CHCHD2,B_glial,Astrocyte,Astrocyte,Astrocyte,Astrocyte,avg_c2,M3 Mixed/oligo-leaning,True,Astrocyte
+GPNMB,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True,Myeloid/DAM
+IQGAP2,B_myeloid,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,Myeloid/DAM,avg_c4,M5 Myeloid/DAM,True,Myeloid/DAM
