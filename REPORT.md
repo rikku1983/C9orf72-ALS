@@ -31,7 +31,7 @@ Using end-stage human spinal cord profiled by spatial transcriptomics, with all 
 
 4. **The DAM/GPNMB/CHIT1 program is anatomically targeted to motor tracts, not to the anterior horn.** Its peak is **anterolateral white matter** — higher than every other region in 9/9 ALS donors — while the **dorsal columns are spared** (GPNMB and CHIT1 not elevated vs control there, p = 0.38, 0.33). This motor-tract selectivity is consistent with corticospinal degeneration.
 
-**What is *not* supported.** The DAM/GPNMB/CHIT1 program shows **no C9-vs-sALS difference in any region** (p = 0.19–0.91). Neither does myeloid abundance. So the myeloid/lipid axis is a shared ALS severity marker, not a C9-specific mechanism; the C9-specific signal is confined to NF-κB-family signalling in grey matter.
+**What is *not* supported.** The DAM/GPNMB/CHIT1 program shows **no C9-vs-sALS difference in any region** (p = 0.19–0.91). Neither does myeloid abundance. So the myeloid/lipid axis is a shared ALS marker, not a C9-specific mechanism; the C9-specific signal is confined to NF-κB-family signalling in grey matter.
 
 All results were validated against the original authors' processed Seurat objects (per-spot QC concordance r = 1.00; key-gene Spearman 0.96–1.00).
 
@@ -193,7 +193,7 @@ The **dorsal columns are spared**: GPNMB and CHIT1 there are not elevated over c
 
 GPNMB co-expresses with the complement and myeloid programs in ALS spots, most strongly in anterolateral WM (ρ = +0.254 complement, +0.189 myeloid) and more weakly in the anterior horn (+0.165, +0.078). Within-section GPNMB–DAM coupling rises with disease (median ρ 0.08 control → 0.13 sALS → 0.23 C9; ALS vs control p = 0.045), and across donors in anterolateral WM reaches ρ = 0.86 (0.82 within ALS donors alone, p = 0.007).
 
-**Critically, none of DAM, GPNMB or CHIT1 differs between C9 and sALS in any region** (p = 0.19–0.91). This program is a shared ALS severity axis, not a genotype discriminator.
+**Critically, none of DAM, GPNMB or CHIT1 differs between C9 and sALS in any region** (p = 0.19–0.91). This program is a shared ALS axis, not a genotype discriminator.
 
 ![Figure 3. Spatial maps of histological region, DAM core score, GPNMB and CHIT1 in one representative section per condition (selected as the section closest to its group's median DAM core).]({{artifact:art_2f4b5b40-f48a-4119-bf5a-840822f657df}})
 
@@ -209,7 +209,7 @@ Two caveats bound this test: `auth_TDP43_mean` is an immunofluorescence intensit
 
 ### 4.7 Protein layer confirms myeloid activation
 
-In the authors' anterior horns, **ITGAX/CD11c is elevated in ALS vs control (Δ +0.80, p = 0.013)**; CD68 (Δ +0.43, p = 0.133) and HLA-DRA (Δ +0.57, p = 0.185) trend in the same direction but are not significant. ITGAX protein also tracks the severity gradient (ρ = 0.559, p = 0.016). *This is a correction: the earlier version reported CD68 as significant (p = 0.013) in the mislabelled region; on the authors' anterior horns ITGAX is the significant marker and CD68 is not.*
+In the authors' anterior horns, **ITGAX/CD11c is elevated in ALS vs control (Δ +0.80, p = 0.013)**; CD68 (Δ +0.43, p = 0.133) and HLA-DRA (Δ +0.57, p = 0.185) trend in the same direction but are not significant. ITGAX protein also tracks the ordered condition contrast (ρ = 0.559, p = 0.016). *This is a correction: the earlier version reported CD68 as significant (p = 0.013) in the mislabelled region; on the authors' anterior horns ITGAX is the significant marker and CD68 is not.*
 
 No protein marker separates C9 from sALS (smallest p = 0.111, ITGAM).
 
@@ -273,7 +273,7 @@ For transparency, the following statements from the earlier version did **not** 
 | C9-vs-sALS NF-κB "NES up to 2.30" | 2.30 | Maximum \|NES\| for this contrast is **2.17**; 2.53 belongs to C9 vs control |
 | Divergent myeloid programs at TDP-43 lesions | directionally consistent hypothesis | **Negative** — spot-level effect was pseudoreplication (§4.6) |
 
-Claims that **did** survive: myeloid expansion in ALS, absence of any compositional genotype difference, the control → sALS → C9 severity gradient, the NF-κB/TNF-α C9-vs-sALS enrichment in grey matter, and the validation against the authors' objects.
+Claims that **did** survive: myeloid expansion in ALS, absence of any compositional genotype difference, the control → sALS → C9 ordered contrast (now correctly described as a control-vs-ALS effect), the NF-κB/TNF-α C9-vs-sALS enrichment in grey matter, and the validation against the authors' objects.
 
 ---
 
