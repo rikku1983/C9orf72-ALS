@@ -1,0 +1,8 @@
+cluster,marker_set,n_overlap,genes,p_hyper
+1,oligodendrocyte|canonical,2,"CARNS1,OPALIN",0.03192681105302465
+1,astrocyte|computational,1,DCLK2,0.18269230769230768
+2,neuron|computational,1,CKB,0.24038461538461542
+3,oligodendrocyte|computational,2,"EDIL3,SLC24A2",0.005227781926811054
+3,neuron|canonical,1,CNTN1,0.07692307692307693
+5,macrophage|computational,4,"C1QC,CYBA,LAPTM5,TYROBP",0.04231723967546779
+5,macrophage|canonical,1,CD68,0.4615384615384615

@@ -316,8 +316,8 @@ Cell2location abundances:
 |---|:-:|---|---|
 | M1 Oligodendrocyte/myelin | 19 | Oligodendrocytes +0.43 | Anterolateral WM |
 | M2 Astrocyte | 25 | Astrocytes +0.29 | Anterolateral WM |
-| M3 Neuronal | 8 | Neurons +0.18 | Anterolateral WM |
-| M4 Vascular | 4 | Endothelial +0.43 | Anterior horns |
+| M3 Mixed, oligodendrocyte-leaning | 8 | no coherent type (6 types across 8 genes) | Anterolateral WM |
+| M4 Endothelial/vascular (sparse) | 4 | Endothelial +0.43 (4/4 genes, but all sparsely detected) | Anterior horns |
 | **M5 Myeloid/DAM** | **48** | **Prolif. microglia +0.60, macrophages +0.57, microglia +0.56, oligodendrocytes −0.44** | **Anterolateral WM** |
 
 M5 contains 46% of the analysable genes and is by far the most internally coherent
@@ -325,6 +325,18 @@ M5 contains 46% of the analysable genes and is by far the most internally cohere
 ITGB2, CD53, SPI1, SYK, HCK, NCF2, CYBA, PYCARD, C3AR1, IFI30 and others). Gene-level
 mediation across such a collinear block repeatedly re-tests one latent variable; the
 effective number of independent mediators in this list is approximately five.
+
+**Module annotation was subsequently audited** (coherence metrics + independent CellGuide marker
+overlap; `mediator_module_annotation_summary.csv`). M1 (high confidence: 17/19 genes oligodendrocyte,
+within-module r = 0.42, canonical markers CARNS1/OPALIN p = 0.032) and M5 (high confidence: all 48 genes
+immune, r = 0.52, macrophage markers C1QC/CYBA/LAPTM5/TYROBP p = 0.042) are solid. **M3 was renamed from
+"Neuronal" — it is not a neuronal module**: only 2/8 genes best-match neurons, its strongest external
+evidence is oligodendrocyte (EDIL3, SLC24A2; p = 0.005), and it fails a direct sanity check — CNTN1,
+SLC24A2 and MAPK8IP2 are flat in ALS anterior horn (p = 0.72-1.00) while NEFL falls sharply in the same
+spots (p = 0.001). M4 is unanimous for endothelium but rests on four sparsely detected, functionally
+unrelated genes. M2 (astrocyte) is moderate: half its genes map to the Cell2location 'ependymal' column,
+a very small population likely absorbing astrocyte signal, though the set contains textbook astrocyte
+genes (GJA1, NDRG2, HEPACAM, GPR37L1, DAAM2, TMEM47).
 
 Note on the suspected muscle-contamination subset: in spinal cord, **CARNS1 and LDB3
 track oligodendrocyte abundance** (r = 0.70, 0.73) and PYGM tracks astrocytes (r = 0.30),
