@@ -442,14 +442,27 @@ rho = -0.017, p = 1.00). Combined with its anterolateral white-matter peak, this
 myeloid program to degenerating tracts rather than to the immediate motor-neuron
 microenvironment — an argument against it being a proximate mediator of motor-neuron death.
 
-**TDP-43 pathology: null for every module** (6 donors with both pathology-bearing and unaffected
-spots; mean deltas -0.09 to +0.01, all p >= 0.156). This extends the stage-17 negative from the
-original programs to the mediator modules.
+**TDP-43 pathology: no detectable effect for any module.** The contrast is Ring + TDP43_adjacent
+spots (pathology) versus the authors' **TDP43_distant** spots, which serve as a spatially matched
+internal control; per-donor deltas were tested by Wilcoxon signed-rank. Mean deltas -0.021 to
++0.036, all p >= 0.156 (M1 1.00, M3 1.00, M4 0.22, M5 0.44, M2 0.16).
+
+*Design note.* An initial version of this test compared all three selected categories (including
+TDP43_distant) against Not_selected. That comparison is regionally confounded: Not_selected spots
+are 67% white matter whereas Ring/adjacent/distant are ~70-75% anterior horn, so it substantially
+measured the grey/white axis rather than pathology. It produced spuriously larger negative deltas
+(e.g. M5 -0.094 versus -0.016 in the matched contrast). The matched-control result above supersedes it.
+
+*How strong is this negative?* Weaker than it may appear. Only 6 of 9 ALS donors carry any Ring or
+adjacent spots at all (C5_GW24, S2_GW37 and S3_GW18 have none), and two of the six contribute fewer
+than 25 pathology spots. With n = 6 the smallest achievable two-sided Wilcoxon p is 0.031, so this
+is an underpowered test that detected nothing, not a demonstration that no effect exists. It is
+consistent with the stage-17 negative on the original programs, which hit the same ceiling.
 
 ![Figure 11. Spatial-context tests. (a) M1 across motor-neuron distance bins, per donor with condition means. (b) Per-donor M1 slopes by condition. (c) Per-donor correlation of each module with MAP2 neuronal immunofluorescence. (d) Motor-neuron distance slopes for all modules.]({{artifact:art_5b828a47-c654-450e-ae4d-2f1b5cfe4a3f}})
 
 **Tables:** `mediator_MNdistance_gradient.csv` - `mediator_MAP2_correlation.csv` -
-`mediator_TDP43_donorlevel.csv`. **Code:** `code/analysis/22_mediator_spatial_context.py`.
+`mediator_TDP43_donorlevel.csv` (initial, confounded) · `mediator_TDP43_corrected.csv` (matched-control, authoritative). **Code:** `code/analysis/22_mediator_spatial_context.py`.
 
 **Phase II tables:** `mediator_genes_annotated.csv` (per gene: module, cell type, peak
 region, module contrast statistics, blood detectability, panel/detection status) ·
