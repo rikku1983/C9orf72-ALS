@@ -500,6 +500,57 @@ coherent pattern worth reporting, not an established result.
 **Tables:** `mediator_composition_adjusted.csv` - `mediator_coherence_bydonor.csv` -
 `mediator_coherence_perdonor_raw.csv`.
 
+
+### 9.9 Cross-platform validation and re-analysis with bulk-defined clusters (stage 24)
+
+The collaborator supplied VST-normalised, batch-corrected bulk expression for all 118 genes
+across **156 cervical cord samples** — the dataset the causal model was fitted on. This permits
+an independent check of the module structure and a re-run of every Phase II test using clusters
+defined **outside** the spatial data.
+
+**The module structure replicates across platforms.** Clustering the bulk matrix with the same
+procedure (Pearson, average linkage) gives adjusted Rand index **0.627** against the spatial
+modules (co-clustering agreement 0.827). The myeloid module is near-identical: **46 of 48 M5
+genes** fall in one bulk cluster (the exceptions, SLC38A2 and SLC5A3, were M5's two weakest
+members). The glial/myeloid division is **perfect** — no gene switches sides between platforms.
+
+**Bulk cannot resolve the glial sub-structure.** All 52 M1+M2+M3 genes collapse into the bulk
+glial cluster. This is expected: in bulk cord every sample is a grey/white mixture, so
+oligodendrocyte and astrocyte content co-vary with block composition. Consistent with that, bulk
+agrees slightly better with the **uncentred** spatial clustering (ARI 0.686) than the
+region-centred one (0.627).
+
+**Both platforms agree the real structure is k = 2** (silhouette 0.507 bulk, 0.381 spatial),
+i.e. myeloid versus everything else. Repeating the full Phase II test battery with the
+bulk-defined two-cluster solution (B_glial = 52 genes, B_myeloid = 52 usable of 66):
+
+| Result | 5 spatial modules | 2 bulk clusters | Verdict |
+|---|---|---|---|
+| Myeloid ALS vs control | M5 p = 0.003-0.013 | B_myeloid p = 0.003-0.013 | unchanged |
+| Myeloid ordinal contrast | rho 0.48-0.75 | rho 0.49-0.75 | unchanged |
+| **C9 vs sALS, any region** | all p >= 0.41 | all p >= 0.41 | **unchanged (null)** |
+| C9 vs sALS, composition-adjusted | all p >= 0.063 | all p >= 0.111 | unchanged (null) |
+| Myeloid signal: compositional vs intrinsic | abolished in grey, survives in WM | identical (WM p = 0.003) | unchanged |
+| TDP-43 matched contrast | all null | all null | unchanged |
+| **M1 myelin MN-gradient** | **p = 0.0079** | B_glial p = 0.299 | **lost to dilution** |
+| M2-MAP2 correlation | p = 0.0028 | B_glial p = 0.099 | weakened by dilution |
+
+**Interpretation.** Every conclusion that matters to the mediation question is robust to how the
+genes are grouped. In particular the central negative — no C9-versus-sALS difference in any
+region, before or after composition adjustment — holds identically under a clustering derived
+from the collaborator's own better-powered data, so it cannot be an artifact of my module
+definition. The two results that are lost were specific to sub-modules (myelin gradient in M1,
+neuronal-content correlation in M2) and disappear by dilution rather than contradiction: the
+direction is preserved in both cases, the signal is simply averaged away across a 52-gene cluster.
+This argues for keeping the finer modules for *mechanistic* questions and the two-cluster
+solution for *mediation* questions.
+
+![Figure 13. Bulk versus spatial module structure. (a) Bulk co-expression ordered by bulk clustering, with spatial module assignment as a colour bar. (b) Cross-tabulation of spatial modules against bulk clusters. (c) Silhouette by k in both datasets.]({{artifact:art_ea82383c-1f79-4149-8a5e-49dc382b43a1}})
+
+![Figure 14. Re-running Phase II with bulk-defined clusters. (a) Myeloid disease signal is unchanged. (b) C9-versus-sALS remains null under every grouping. (c) The M1 myelin gradient is lost when diluted into the broader glial cluster.]({{artifact:art_3fc3d3d2-896a-48df-b5d2-19a1b62c0df2}})
+
+**Tables:** `bulk_vs_spatial_module_assignment.csv` - `bulk2cluster_contrasts.csv`.
+
 **Phase II tables:** `mediator_genes_annotated.csv` (per gene: module, cell type, peak
 region, module contrast statistics, blood detectability, panel/detection status) ·
 `mediator_modules.csv` · `mediator_celltype_correlation.csv` · `mediator_region_profile.csv` ·
