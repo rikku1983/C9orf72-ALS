@@ -343,7 +343,7 @@ track oligodendrocyte abundance** (r = 0.70, 0.73) and PYGM tracks astrocytes (r
 so they behave as CNS-expressed genes here rather than as skeletal-muscle carryover.
 CHRNA1 is below detection.
 
-![Figure 7. Mediator-gene module structure. (a) Pseudobulk co-expression correlation, hierarchically ordered, with the five modules outlined. (b) Module identity assigned by correlation with Cell2location cell-type abundance.](/home/sunli/.claude-science/orgs/3ca4ddc0-1543-43b6-b716-d71f59421156/artifacts/proj_76eadaefb773/86ca08cf-2624-487c-bf8c-5c43e1b24637/vfa892da1_mediator_module_structure.png)
+![Figure 7. Mediator-gene module structure. (a) Pseudobulk co-expression correlation, hierarchically ordered, with the five modules outlined. (b) Module identity assigned by correlation with Cell2location cell-type abundance.]({{artifact:art_86ca08cf-2624-487c-bf8c-5c43e1b24637}})
 
 ### 9.3 Regional localisation
 
@@ -353,9 +353,9 @@ white matter in **9/9 ALS donors** (all p = 0.004) — matching the DAM/GPNMB/CH
 localisation established in §4.5. M1, M2 and M3 also favour anterolateral WM but with
 much smaller margins, and M4 (vascular) shows no significant regional preference.
 
-![Figure 8. Module scores by donor across the four author histological regions.](/home/sunli/.claude-science/orgs/3ca4ddc0-1543-43b6-b716-d71f59421156/artifacts/proj_76eadaefb773/5f6a240c-9a14-4cc5-a770-b9b0eebdcbe0/vebdfd672_mediator_region_profile.png)
+![Figure 8. Module scores by donor across the four author histological regions.]({{artifact:art_5f6a240c-9a14-4cc5-a770-b9b0eebdcbe0}})
 
-![Figure 9. Spatial maps of each module score in one representative section per condition.](/home/sunli/.claude-science/orgs/3ca4ddc0-1543-43b6-b716-d71f59421156/artifacts/proj_76eadaefb773/6aae6dac-c194-4249-b9ce-23d6b93de128/v312751dc_mediator_module_spatial_maps.png)
+![Figure 9. Spatial maps of each module score in one representative section per condition.]({{artifact:art_6aae6dac-c194-4249-b9ce-23d6b93de128}})
 
 ### 9.4 Only the myeloid module tracks disease — and it is not C9-specific
 
@@ -369,7 +369,7 @@ Donor-level contrasts per module per region:
 - **C9-ALS vs sALS: no module is significant in any region** (smallest p = 0.063,
   M4 in other grey matter).
 
-![Figure 10. Module-level condition contrasts across regions; asterisks mark p < 0.05.](/home/sunli/.claude-science/orgs/3ca4ddc0-1543-43b6-b716-d71f59421156/artifacts/proj_76eadaefb773/3de3a96c-64d2-4b23-abe2-64e0ffaf5959/vc9a59f9c_mediator_module_contrasts.png)
+![Figure 10. Module-level condition contrasts across regions; asterisks mark p < 0.05.]({{artifact:art_3de3a96c-64d2-4b23-abe2-64e0ffaf5959}})
 
 ### 9.5 Peripheral detectability
 
@@ -446,7 +446,7 @@ microenvironment — an argument against it being a proximate mediator of motor-
 spots; mean deltas -0.09 to +0.01, all p >= 0.156). This extends the stage-17 negative from the
 original programs to the mediator modules.
 
-![Figure 11. Spatial-context tests. (a) M1 across motor-neuron distance bins, per donor with condition means. (b) Per-donor M1 slopes by condition. (c) Per-donor correlation of each module with MAP2 neuronal immunofluorescence. (d) Motor-neuron distance slopes for all modules.](/home/sunli/.claude-science/orgs/3ca4ddc0-1543-43b6-b716-d71f59421156/artifacts/proj_76eadaefb773/5b828a47-c654-450e-ae4d-2f1b5cfe4a3f/v55c0a596_mediator_MNdistance_MAP2.png)
+![Figure 11. Spatial-context tests. (a) M1 across motor-neuron distance bins, per donor with condition means. (b) Per-donor M1 slopes by condition. (c) Per-donor correlation of each module with MAP2 neuronal immunofluorescence. (d) Motor-neuron distance slopes for all modules.]({{artifact:art_5b828a47-c654-450e-ae4d-2f1b5cfe4a3f}})
 
 **Tables:** `mediator_MNdistance_gradient.csv` - `mediator_MAP2_correlation.csv` -
 `mediator_TDP43_donorlevel.csv`. **Code:** `code/analysis/22_mediator_spatial_context.py`.
