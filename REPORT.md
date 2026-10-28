@@ -464,6 +464,42 @@ consistent with the stage-17 negative on the original programs, which hit the sa
 **Tables:** `mediator_MNdistance_gradient.csv` - `mediator_MAP2_correlation.csv` -
 `mediator_TDP43_donorlevel.csv` (initial, confounded) · `mediator_TDP43_corrected.csv` (matched-control, authoritative). **Code:** `code/analysis/22_mediator_spatial_context.py`.
 
+
+### 9.8 Composition adjustment and differential co-expression (stage 23)
+
+Two further tests of whether a C9-versus-sALS effect is hidden by the mean-comparison design.
+
+**Composition adjustment.** Each module score was residualised **within donor** against the
+Cell2location abundance of its matched cell type (M1 oligodendrocytes, M2 astrocytes + ependymal,
+M3 oligodendrocytes + neurons, M4 endothelium, M5 total myeloid), then donor-level contrasts were
+repeated on the residuals. **No C9-versus-sALS contrast becomes significant after adjustment**
+(all p >= 0.063; smallest is M4 in other grey matter, unchanged at 0.063). Composition was not
+masking a genotype effect.
+
+The adjustment is informative about the *disease* effect, however. For M5, ALS-versus-control
+survives adjustment in anterolateral white matter (p 0.003 -> 0.004) but is abolished in the
+anterior horn (0.005 -> 0.133) and other grey matter (0.013 -> 0.064). Read directly: in grey
+matter the myeloid signal is **compositional** -- more myeloid cells, similar per-cell expression --
+whereas in anterolateral white matter a **cell-intrinsic** component remains, consistent with a
+genuinely activated myeloid state in degenerating tracts rather than simple infiltration.
+
+**Differential co-expression failed as a method.** Per-donor module coherence (mean within-module
+gene-gene correlation across that donor's spots) was intended as a better-powered within-donor
+statistic. It is not interpretable here: coherence correlates strongly with sequencing depth
+(Spearman rho = +0.73 to +0.82 across modules in white matter), so the statistic largely reports
+how deeply a donor was sequenced. All condition contrasts were null (C9 vs sALS p >= 0.19;
+ALS vs control p >= 0.052) but no weight should be placed on that given the confound.
+
+**Multiple testing.** Across all 60 tests in this stage nothing survives Benjamini-Hochberg
+correction (smallest q = 0.107, for the two anterolateral-white-matter composition-adjusted
+ALS-versus-control results). The composition/intrinsic distinction above should be read as a
+coherent pattern worth reporting, not an established result.
+
+![Figure 12. (a) M5 ALS-versus-control significance before and after adjusting for myeloid abundance, by region. (b) C9-versus-sALS p-values, raw versus composition-adjusted, all modules and regions. (c) Module coherence against per-donor sequencing depth, showing the confound that invalidates the co-expression test.]({{artifact:art_a064754c-ec4d-4d91-b3b4-a402c5ec948e}})
+
+**Tables:** `mediator_composition_adjusted.csv` - `mediator_coherence_bydonor.csv` -
+`mediator_coherence_perdonor_raw.csv`.
+
 **Phase II tables:** `mediator_genes_annotated.csv` (per gene: module, cell type, peak
 region, module contrast statistics, blood detectability, panel/detection status) ·
 `mediator_modules.csv` · `mediator_celltype_correlation.csv` · `mediator_region_profile.csv` ·
