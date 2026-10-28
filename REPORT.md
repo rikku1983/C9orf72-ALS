@@ -27,7 +27,7 @@ Using end-stage human spinal cord profiled by spatial transcriptomics, with all 
 
 2. **The C9-specific signal is NF-κB/TNF-α signalling, and it is localized to grey matter.** *TNF-α signalling via NF-κB* is the top pathway separating C9-ALS from sALS in the anterior horn (NES = 1.86, FDR = 0.014) and in other grey matter (NES = 2.23, FDR < 0.001), accompanied by inflammatory response (FDR = 0.009) and IL-6/JAK/STAT3 (FDR = 0.016). It is **absent in both white-matter compartments** (FDR = 0.53, 0.20). The cleanest form of the result: in other grey matter, C9 engages NF-κB (vs control NES +2.41) where **sALS does not** (vs control NES −1.09).
 
-3. **A disease-severity gradient (control → sALS → C9) runs through the myeloid/lipid axis and holds in the true anterior horn:** CHIT1 (ρ = 0.76, p < 0.001), DAM score (ρ = 0.72, p = 0.001), GPNMB (ρ = 0.71, p = 0.001), C1QC (ρ = 0.69, p = 0.002), complement score (ρ = 0.66, p = 0.003). The homeostatic-microglia score does not track it (p > 0.05).
+3. **An ordered contrast (control → sALS → C9) through the myeloid/lipid axis is significant in the true anterior horn** — though see the caveat below, this is driven almost entirely by the control-versus-ALS step: CHIT1 (ρ = 0.76, p < 0.001), DAM score (ρ = 0.72, p = 0.001), GPNMB (ρ = 0.71, p = 0.001), C1QC (ρ = 0.69, p = 0.002), complement score (ρ = 0.66, p = 0.003). The homeostatic-microglia score does not track it (p > 0.05).
 
 4. **The DAM/GPNMB/CHIT1 program is anatomically targeted to motor tracts, not to the anterior horn.** Its peak is **anterolateral white matter** — higher than every other region in 9/9 ALS donors — while the **dorsal columns are spared** (GPNMB and CHIT1 not elevated vs control there, p = 0.38, 0.33). This motor-tract selectivity is consistent with corticospinal degeneration.
 
@@ -156,7 +156,7 @@ The C9-specific inflammatory signal sits in **grey matter** and disappears in wh
 
 **No gene survives FDR correction in the C9-vs-sALS anterior-horn contrast** (0 of 11,072; best is *MAN2A1*, padj = 0.059). The signal is pathway-level only, which is the expected ceiling at 4 vs 5 donors. For reference, the same regions yield 219 (C9 vs control) and 325 (sALS vs control) FDR-significant genes, confirming the pipeline detects real effects when they are large.
 
-### 4.4 A disease-severity gradient in the myeloid/lipid axis
+### 4.4 An ordered condition contrast in the myeloid/lipid axis
 
 Ordinal trend (control < sALS < C9), donor-level Spearman in the authors' anterior horns (n = 18 donors):
 
@@ -174,7 +174,16 @@ Ordinal trend (control < sALS < C9), donor-level Spearman in the authors' anteri
 | TREM2 | 0.544 | 0.019 |
 | Homeostatic score | 0.398 | 0.102 |
 
-The gradient is robust and **now established in the authors' anterior horns**, which the earlier version of this report could not legitimately claim. The homeostatic-microglia score does not track it, consistent with a shift from homeostatic to activated myeloid states rather than a uniform increase in myeloid activity.
+The contrast is robust and **now established in the authors' anterior horns**, which the earlier version of this report could not legitimately claim.
+
+> **What 'ordinal trend' does and does not mean here.** The ordering control < sALS < C9
+> is an *assumption* encoded in the coding (0/1/2), not a measured severity variable.
+> **This cohort records no survival, disease duration, age at onset, ALSFRS or pathological
+> stage** — only age, sex and subdiagnosis. Decomposing the trend shows it is almost entirely
+> the control-versus-ALS step: for M5 in anterolateral WM the ordinal coding gives rho = 0.754
+> versus rho = 0.739 for a plain binary ALS/control indicator (difference +0.015), and the
+> sALS -> C9 step alone is not significant (rho = 0.346, p = 0.36). These results should be
+> read as *disease versus control*, not as a dose-response in severity. The homeostatic-microglia score does not track it, consistent with a shift from homeostatic to activated myeloid states rather than a uniform increase in myeloid activity.
 
 ### 4.5 The DAM/GPNMB/CHIT1 program is targeted to motor tracts (stage 18)
 
@@ -222,7 +231,7 @@ Because the cohorts are unpaired and the compartments differ, this is a populati
 
 1. **ALS converges on a shared cellular endpoint** in the anterior horn: myeloid expansion (microglia, proliferating microglia, macrophages) with neuronal transcript loss. Genotype is invisible at the level of cell-type abundance.
 
-2. **A shared severity axis runs control → sALS → C9** through the myeloid/lipid/complement program (DAM, GPNMB, CHIT1, C1QA/C1QC, APOE), anatomically targeted to **anterolateral white matter** with sparing of the dorsal columns — the signature of motor-tract degeneration and debris clearance. This axis does **not** distinguish C9 from sALS; it scales with disease.
+2. **A shared disease axis separates ALS from control** in the myeloid/lipid/complement program (DAM, GPNMB, CHIT1, C1QA/C1QC, APOE), anatomically targeted to **anterolateral white matter** with sparing of the dorsal columns — the signature of motor-tract degeneration and debris clearance. This axis does **not** distinguish C9 from sALS, and because no severity variable was recorded we cannot say whether it scales with disease severity — only that it separates ALS from control.
 
 3. **Genotype acts on inflammatory signalling in grey matter.** The repeat expansion is associated with NF-κB/TNF-α, inflammatory-response and IL-6/JAK/STAT3 enrichment in the anterior horn and other grey matter — and in other grey matter this is a true dissociation, with C9 engaging NF-κB where sALS does not. This is the leading candidate mechanism distinguishing C9-ALS.
 
@@ -234,7 +243,8 @@ The pending bulk RNA-seq cohort is the natural validation: does NF-κB/inflammat
 
 ## 6. Limitations
 
-- **End-stage snapshot.** Visium captures postmortem tissue; the control → sALS → C9 ordering is a severity proxy, not longitudinal.
+- **No severity or survival data.** The cohort records only age, sex and subdiagnosis — no survival, disease duration, onset age, ALSFRS or stage. The control → sALS → C9 ordering is an assumption, not a measurement, and the apparent trend is driven by the control-versus-ALS step (see §4.4). Visium also captures only an end-stage postmortem snapshot.
+- **Confounds.** C9 donors with recorded age are younger (51, 55) than the control mean (~63); two sALS donors carry co-pathology (Alzheimer's, FTD).
 - **Genotype power.** 4 C9-ALS vs 5 sALS donors. Pathway-level and gradient results are robust; **no single gene survives FDR in the C9-vs-sALS anterior-horn contrast**.
 - **Spatial resolution.** Visium spots (~55 µm) are multi-cellular; cell-intrinsic claims are inferred via deconvolution and program scoring. Macrophages and microglia are transcriptionally close and cannot be cleanly separated at this resolution.
 - **Deconvolution is prior-anchored.** C2L was run with `N_cells_per_location = 7`; absolute per-spot cell counts reflect that prior, so only relative comparisons are sound. Motor-neuron estimates are the least reliable column.
@@ -365,13 +375,15 @@ two unrelated analyses.
 
 Three caveats bound what Phase II can conclude:
 
-1. **Direction of causation is not testable here.** If the bulk expression is postmortem,
-   it is measured *after* survival is determined. "Gene shortens survival" and "gene marks
-   the terminal state of an aggressive course" are observationally equivalent. Our data are
-   consistent with the latter: M5 scales monotonically with disease severity
-   (rho up to 0.75) but shows **no C9-versus-sALS difference anywhere** — the pattern
-   expected if C9 raises M5 *through* a shorter, more aggressive course rather than
-   via a genotype-specific myeloid program.
+1. **Direction of causation is not testable here — and neither is severity.** If the bulk
+   expression is postmortem, it is measured *after* survival is determined, so "gene shortens
+   survival" and "gene marks the terminal state of an aggressive course" are observationally
+   equivalent. **This spatial cohort cannot adjudicate it: no survival, duration, onset or
+   functional-score data were recorded.** What we can say is narrower than first stated — M5 is
+   elevated in ALS versus control and shows **no C9-versus-sALS difference in any region**.
+   An earlier draft described M5 as scaling with "severity"; that wording was unsupported,
+   since the control < sALS < C9 ordering is an assumption rather than a measurement
+   (see the note in section 4.4).
 2. **Collinearity inflates the apparent mediator count.** Five modules, not 118 mediators.
 3. **Composition versus regulation is unresolved.** M5 correlates strongly with
    deconvolved myeloid abundance, so much of its bulk signal plausibly reflects *how much*
@@ -381,8 +393,8 @@ Three caveats bound what Phase II can conclude:
 A testable prediction follows: if these genes mediate a **C9-specific** effect, the
 C9-versus-sALS contrast should be non-null in a better-powered cohort. In this cohort
 (4 C9 vs 5 sALS donors) it is null for every module, whereas the shared ALS-versus-control
-and severity-trend contrasts are strongly positive. The spatial data therefore support
-M5 as a **severity mediator** rather than a **genotype-specific** one — leaving the
+and severity-trend contrasts are strongly positive. The spatial data therefore fail to support M5 as a **genotype-specific** mediator; whether it is a
+severity mediator is untestable here for want of any severity variable — leaving the
 NF-kB/grey-matter axis of section 4.3 as the better candidate for C9-specific mediation.
 
 **Phase II tables:** `mediator_genes_annotated.csv` (per gene: module, cell type, peak
