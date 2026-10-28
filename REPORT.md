@@ -276,3 +276,116 @@ Claims that **did** survive: myeloid expansion in ALS, absence of any compositio
 **Superseded tables** (retained for provenance, not cited): `pseudobulk_*_ventral_horn_MN.csv`, `gsea_*_ventral_horn_MN_*.csv`, `scores_donor_region.csv`, `microglia_*.csv`, `composition_*_VH.csv`, `protein_*_VH.csv`, `jonckheere_trend_VH.csv`, `mixedmodel_gradient_VH.csv`.
 
 **Next step:** integrate the user's bulk spinal-cord RNA-seq DEGs to test whether NF-κB/inflammatory signalling separates C9 from sALS in an independent, better-powered cohort.
+
+---
+
+## 9. Phase II: mapping the bulk causal-mediator genes onto cell types and regions
+
+**Input.** 118 genes nominated by an independent bulk-RNA causal-mediation analysis as
+potential mediators of the C9orf72 → shorter-survival effect (strong C9 → gene and
+gene → survival paths). The bulk data itself was not available to this analysis, so
+Phase II **characterises** the gene list in the spatial cohort rather than re-testing
+the causal model.
+
+### 9.1 Panel coverage
+
+108 of 118 genes are present in the Visium probe panel; 104 reach ≥1% of spots.
+**All nine ribosomal genes (RPL23, RPL24P4, RPL26, RPL27, RPL7A, RPS10, RPS15A, RPS17)
+plus GPX1 and AC006011.2 are absent from the panel by design** — the probe set contains
+zero ribosomal protein genes. They therefore cannot be evaluated here; whether they
+represent an RNA-integrity axis in the bulk data remains an open question for that cohort.
+ALOX15B, CHRNA1, DPEP2 and OTOA are in the panel but below detection.
+
+### 9.2 The list is five modules, not 118 independent mediators
+
+Co-expression clustering on donor x region pseudobulk (region-centred, average linkage)
+resolves five modules, each attributable to a cell type by correlation with the authors'
+Cell2location abundances:
+
+| Module | n | Cell-type correlation | Peak region |
+|---|:-:|---|---|
+| M1 Oligodendrocyte/myelin | 19 | Oligodendrocytes +0.43 | Anterolateral WM |
+| M2 Astrocyte | 25 | Astrocytes +0.29 | Anterolateral WM |
+| M3 Neuronal | 8 | Neurons +0.18 | Anterolateral WM |
+| M4 Vascular | 4 | Endothelial +0.43 | Anterior horns |
+| **M5 Myeloid/DAM** | **48** | **Prolif. microglia +0.60, macrophages +0.57, microglia +0.56, oligodendrocytes −0.44** | **Anterolateral WM** |
+
+M5 contains 46% of the analysable genes and is by far the most internally coherent
+(TREM2, TYROBP, CD68, GPNMB, CHIT1, LGALS3, CD63, APOC1, C1QC, CTSS, CTSD, GRN, LAPTM5,
+ITGB2, CD53, SPI1, SYK, HCK, NCF2, CYBA, PYCARD, C3AR1, IFI30 and others). Gene-level
+mediation across such a collinear block repeatedly re-tests one latent variable; the
+effective number of independent mediators in this list is approximately five.
+
+Note on the suspected muscle-contamination subset: in spinal cord, **CARNS1 and LDB3
+track oligodendrocyte abundance** (r = 0.70, 0.73) and PYGM tracks astrocytes (r = 0.30),
+so they behave as CNS-expressed genes here rather than as skeletal-muscle carryover.
+CHRNA1 is below detection.
+
+![Figure 7. Mediator-gene module structure. (a) Pseudobulk co-expression correlation, hierarchically ordered, with the five modules outlined. (b) Module identity assigned by correlation with Cell2location cell-type abundance.](/home/sunli/.claude-science/orgs/3ca4ddc0-1543-43b6-b716-d71f59421156/artifacts/proj_76eadaefb773/86ca08cf-2624-487c-bf8c-5c43e1b24637/vfa892da1_mediator_module_structure.png)
+
+### 9.3 Regional localisation
+
+Four of five modules peak in anterolateral white matter. M5 has by far the strongest
+regional preference — higher than the anterior horn, other grey matter and posterior
+white matter in **9/9 ALS donors** (all p = 0.004) — matching the DAM/GPNMB/CHIT1
+localisation established in §4.5. M1, M2 and M3 also favour anterolateral WM but with
+much smaller margins, and M4 (vascular) shows no significant regional preference.
+
+![Figure 8. Module scores by donor across the four author histological regions.](/home/sunli/.claude-science/orgs/3ca4ddc0-1543-43b6-b716-d71f59421156/artifacts/proj_76eadaefb773/5f6a240c-9a14-4cc5-a770-b9b0eebdcbe0/vebdfd672_mediator_region_profile.png)
+
+![Figure 9. Spatial maps of each module score in one representative section per condition.](/home/sunli/.claude-science/orgs/3ca4ddc0-1543-43b6-b716-d71f59421156/artifacts/proj_76eadaefb773/6aae6dac-c194-4249-b9ce-23d6b93de128/v312751dc_mediator_module_spatial_maps.png)
+
+### 9.4 Only the myeloid module tracks disease — and it is not C9-specific
+
+Donor-level contrasts per module per region:
+
+- **ALS vs control:** only **M5** is significant, in the anterior horn (p = 0.005),
+  other grey matter (p = 0.013) and anterolateral WM (p = 0.003). M1–M4 reach
+  significance nowhere (smallest p = 0.077, M1 in anterolateral WM).
+- **Severity trend (control < sALS < C9):** only **M5**, and in all four regions
+  (rho = 0.48–0.75, p = 0.041 to <0.001).
+- **C9-ALS vs sALS: no module is significant in any region** (smallest p = 0.063,
+  M4 in other grey matter).
+
+![Figure 10. Module-level condition contrasts across regions; asterisks mark p < 0.05.](/home/sunli/.claude-science/orgs/3ca4ddc0-1543-43b6-b716-d71f59421156/artifacts/proj_76eadaefb773/3de3a96c-64d2-4b23-abe2-64e0ffaf5959/vc9a59f9c_mediator_module_contrasts.png)
+
+### 9.5 Peripheral detectability
+
+Of the mediator genes present in the PBMC monocyte pseudobulk, 77 are detectable in blood.
+Seven M5 members are **CNS-restricted** — **TREM2, GPNMB, CHIT1, APOC1, PLAU, ADORA3,
+SIGLEC8** — consistent with §4.8: the lipid/DAM core of the myeloid program does not
+appear in circulating monocytes, so these specific mediators are not accessible as blood
+biomarkers.
+
+### 9.6 Interpretation and caveats
+
+The dominant mediator module is, gene for gene, the myeloid/DAM program this project
+characterised independently from the spatial data — an encouraging convergence between
+two unrelated analyses.
+
+Three caveats bound what Phase II can conclude:
+
+1. **Direction of causation is not testable here.** If the bulk expression is postmortem,
+   it is measured *after* survival is determined. "Gene shortens survival" and "gene marks
+   the terminal state of an aggressive course" are observationally equivalent. Our data are
+   consistent with the latter: M5 scales monotonically with disease severity
+   (rho up to 0.75) but shows **no C9-versus-sALS difference anywhere** — the pattern
+   expected if C9 raises M5 *through* a shorter, more aggressive course rather than
+   via a genotype-specific myeloid program.
+2. **Collinearity inflates the apparent mediator count.** Five modules, not 118 mediators.
+3. **Composition versus regulation is unresolved.** M5 correlates strongly with
+   deconvolved myeloid abundance, so much of its bulk signal plausibly reflects *how much*
+   myeloid infiltration a cord contains rather than per-cell regulatory change. Visium
+   spots are multicellular and cannot settle this; single-nucleus data would.
+
+A testable prediction follows: if these genes mediate a **C9-specific** effect, the
+C9-versus-sALS contrast should be non-null in a better-powered cohort. In this cohort
+(4 C9 vs 5 sALS donors) it is null for every module, whereas the shared ALS-versus-control
+and severity-trend contrasts are strongly positive. The spatial data therefore support
+M5 as a **severity mediator** rather than a **genotype-specific** one — leaving the
+NF-kB/grey-matter axis of section 4.3 as the better candidate for C9-specific mediation.
+
+**Phase II tables:** `mediator_genes_annotated.csv` (per gene: module, cell type, peak
+region, module contrast statistics, blood detectability, panel/detection status) ·
+`mediator_modules.csv` · `mediator_celltype_correlation.csv` · `mediator_region_profile.csv` ·
+`mediator_module_contrasts.csv`. **Code:** `code/analysis/21_mediator_modules.py`.

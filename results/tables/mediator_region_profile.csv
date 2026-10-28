@@ -1,0 +1,16 @@
+module,peak_region,vs_region,mean_diff,n_pos,n,p
+M1,White_matter,Anterior_horns,0.07571902,8,9,0.0078125
+M1,White_matter,Grey_matter,0.05430048,7,9,0.07421875
+M1,White_matter,Posterior_white_matter,0.06779795,8,9,0.0546875
+M2,White_matter,Anterior_horns,0.08782045,9,9,0.00390625
+M2,White_matter,Grey_matter,0.05891519,7,9,0.12890625
+M2,White_matter,Posterior_white_matter,0.071067736,7,9,0.07421875
+M3,White_matter,Anterior_horns,0.102574944,9,9,0.00390625
+M3,White_matter,Grey_matter,0.029210938,6,9,0.42578125
+M3,White_matter,Posterior_white_matter,0.06651755,7,9,0.0546875
+M4,Anterior_horns,Grey_matter,0.00888234,5,9,0.5703125
+M4,Anterior_horns,White_matter,-0.005645218,3,9,0.5703125
+M4,Anterior_horns,Posterior_white_matter,0.03531298,6,9,0.12890625
+M5,White_matter,Anterior_horns,0.19548959,9,9,0.00390625
+M5,White_matter,Grey_matter,0.27689412,9,9,0.00390625
+M5,White_matter,Posterior_white_matter,0.254268,9,9,0.00390625
