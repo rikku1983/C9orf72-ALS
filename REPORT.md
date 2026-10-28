@@ -409,6 +409,48 @@ and severity-trend contrasts are strongly positive. The spatial data therefore f
 severity mediator is untestable here for want of any severity variable — leaving the
 NF-kB/grey-matter axis of section 4.3 as the better candidate for C9-specific mediation.
 
+
+### 9.7 Spatial context: motor-neuron proximity, MAP2 imaging and TDP-43 (stage 22)
+
+Three author annotations were used, with designs chosen to escape the 4-vs-5-donor ceiling.
+Motor-neuron distance and MAP2 are **within-donor** gradients: each donor contributes its own
+slope or correlation, and those are then tested across all donors.
+
+**Confound control.** 91% of near-motor-neuron spots lie in the anterior horn, so the distance
+gradient was computed **within the anterior horn only** (16 of 18 donors have >=15 spots in >=3 of
+the four distance bins: 9 control, 4 sALS, 3 C9). Without this restriction the gradient would
+simply re-measure the grey/white axis. MAP2 passes its own sanity check (mean 0.89 in anterior horn
+versus 0.48 in white matter).
+
+**M1 oligodendrocyte gradient differs between ALS and control** — the strongest well-powered
+result in Phase II. In controls the myelin module *rises* with distance from motor neurons
+(mean slope +0.017 per bin); in ALS that gradient is flat or reversed (sALS -0.006, C9 +0.006);
+ALS versus control p = 0.0079 (BH q = 0.039 across the five module tests). All four sALS donors
+have slopes at or below zero, versus 9/9 controls positive. The simplest reading is loss of the
+normal myelin enrichment in peri-anterior-horn white matter, consistent with the overall depletion
+of M1 in ALS white matter (section 9.4).
+
+**M2 tracks neuronal content; M3 does not.** Per-donor Spearman against MAP2 immunofluorescence
+within the anterior horn: M2 rho = +0.127 (14/18 donors positive, p = 0.0028, **BH q = 0.042** —
+the only test surviving correction across all 15), consistent with astrocytes occupying neuropil
+alongside neurons. **M3 shows no relationship with MAP2 (rho = +0.010, p = 0.50)** — independent
+protein-imaging confirmation, orthogonal to the transcriptome, that M3 is not a neuronal module
+and that its renaming (section 9.2) is correct.
+
+**The myeloid module shows no motor-neuron proximity gradient** (M5 slope p = 0.21; MAP2
+rho = -0.017, p = 1.00). Combined with its anterolateral white-matter peak, this locates the
+myeloid program to degenerating tracts rather than to the immediate motor-neuron
+microenvironment — an argument against it being a proximate mediator of motor-neuron death.
+
+**TDP-43 pathology: null for every module** (6 donors with both pathology-bearing and unaffected
+spots; mean deltas -0.09 to +0.01, all p >= 0.156). This extends the stage-17 negative from the
+original programs to the mediator modules.
+
+![Figure 11. Spatial-context tests. (a) M1 across motor-neuron distance bins, per donor with condition means. (b) Per-donor M1 slopes by condition. (c) Per-donor correlation of each module with MAP2 neuronal immunofluorescence. (d) Motor-neuron distance slopes for all modules.](/home/sunli/.claude-science/orgs/3ca4ddc0-1543-43b6-b716-d71f59421156/artifacts/proj_76eadaefb773/5b828a47-c654-450e-ae4d-2f1b5cfe4a3f/v55c0a596_mediator_MNdistance_MAP2.png)
+
+**Tables:** `mediator_MNdistance_gradient.csv` - `mediator_MAP2_correlation.csv` -
+`mediator_TDP43_donorlevel.csv`. **Code:** `code/analysis/22_mediator_spatial_context.py`.
+
 **Phase II tables:** `mediator_genes_annotated.csv` (per gene: module, cell type, peak
 region, module contrast statistics, blood detectability, panel/detection status) ·
 `mediator_modules.csv` · `mediator_celltype_correlation.csv` · `mediator_region_profile.csv` ·
