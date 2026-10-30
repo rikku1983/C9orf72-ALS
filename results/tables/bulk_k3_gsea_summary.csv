@@ -1,0 +1,4 @@
+cluster,n_genes,n_sig_sets,top_up,top_down
+Myeloid/DAM,66,1313,Neutrophil Degranulation; Interferon Gamma Response; TNF-alpha Signaling via NF-kB,Acetylcholine Neurotransmitter Release Cycle; Glutamate Receptor Signaling Pathway; Vesicle Transport Along Microtubule
+Astrocyte,30,505,Axoneme Assembly; Specification of the Neural Plate Border; Cilium Movement,mTORC1 Signaling; Neutrophil Degranulation; Unfolded Protein Response
+Oligo/myelin,22,583,"Unblocking of NMDA Receptors, Glutamate Binding and Activation; CREB1 Phosphorylation Through NMDA Receptor-Mediated Activation of RAS Signaling; Ras Activation Upon Ca2+ Influx Through NMDA Receptor",Interferon Gamma Response; TNF-alpha Signaling via NF-kB; Response To Lipopolysaccharide
