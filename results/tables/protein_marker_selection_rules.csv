@@ -1,0 +1,5 @@
+rule,markers,n_markers,prespecifiable,cohen_d,p_onesided,n_per_group_80pct
+A. gene is one of the 118 mediators,CD68,1,True,0.82,0.095,24
+B. gene or obligate partner in the 118,"CD68,ITGAX,ITGAM,FCGR3A,CD14",5,True,0.52,0.206,58
+"C. myeloid-annotated, then condition-blind QC","CD68,ITGAX,HLA-DRA",3,True,0.69,0.206,33
+"D. post hoc, selected on tracking the RNA features","VIM,ITGAX,CD68",3,False,0.45,0.278,79
