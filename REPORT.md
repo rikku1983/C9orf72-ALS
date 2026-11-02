@@ -25,7 +25,7 @@ Using end-stage human spinal cord profiled by spatial transcriptomics, with all 
 
 1. **ALS expands the myeloid compartment of the anterior horn; genotype does not change composition.** In the anterior horns, proliferating microglia (+2.25 pp, p = 0.006), microglia (+1.08 pp, p = 0.013) and macrophages (+1.27 pp, p = 0.022) all increase in ALS vs control. **No cell type differs between C9-ALS and sALS** (smallest p = 0.063, astrocytes). The genotype effect is not compositional — it is a difference in what cells express.
 
-2. **The C9-specific signal is NF-κB/TNF-α signalling, and it is localized to grey matter.** *TNF-α signalling via NF-κB* is the top pathway separating C9-ALS from sALS in the anterior horn (NES = 1.86, FDR = 0.014) and in other grey matter (NES = 2.23, FDR < 0.001), accompanied by inflammatory response (FDR = 0.009) and IL-6/JAK/STAT3 (FDR = 0.016). It is **absent in both white-matter compartments** (FDR = 0.53, 0.20). The cleanest form of the result: in other grey matter, C9 engages NF-κB (vs control NES +2.41) where **sALS does not** (vs control NES −1.09).
+2. **The C9-specific signal is NF-κB/TNF-α signalling, and it is localized to grey matter.** *TNF-α signalling via NF-κB* is the top pathway separating C9-ALS from sALS in the anterior horn (NES = 1.86, FDR = 0.014) and in the posterior horn (NES = 2.23, FDR < 0.001), accompanied by inflammatory response (FDR = 0.009) and IL-6/JAK/STAT3 (FDR = 0.016). It is **absent in both white-matter compartments** (FDR = 0.53, 0.20). The cleanest form of the result: in the posterior horn, C9 engages NF-κB (vs control NES +2.41) where **sALS does not** (vs control NES −1.09).
 
 3. **An ordered contrast (control → sALS → C9) through the myeloid/lipid axis is significant in the true anterior horn** — though see the caveat below, this is driven almost entirely by the control-versus-ALS step: CHIT1 (ρ = 0.76, p < 0.001), DAM score (ρ = 0.72, p = 0.001), GPNMB (ρ = 0.71, p = 0.001), C1QC (ρ = 0.69, p = 0.002), complement score (ρ = 0.66, p = 0.003). The homeostatic-microglia score does not track it (p > 0.05).
 
@@ -66,7 +66,19 @@ RNA depth is modest, as expected for postmortem cord on a protein-focused assay:
 Each Visium section was loaded and the RNA/protein modalities separated. RNA-only QC thresholds: minimum 200 counts, minimum 100 genes, maximum 30% mitochondrial reads per spot. Counts were normalized to median library size and log1p-transformed. QC retained 132,781 spots across the 20 sections.
 
 ### 3.2 Region annotation — authors' manual histology (stages 18–20)
-**All region-stratified results in this report use `auth_manual`, the original authors' manual histological annotation**, with five classes: Anterior_horns, Grey_matter (other grey), White_matter (anterolateral funiculi), Posterior_white_matter (dorsal columns), Meninges.
+**All region-stratified results in this report use `auth_manual`, the original authors' manual histological annotation**, with five classes: Anterior_horns, Grey_matter (posterior horn), White_matter (anterolateral funiculi), Posterior_white_matter (dorsal columns), Meninges.
+
+**Region terminology.** The four analysed regions are the original authors' published
+categories (Zhang et al. 2026), which they name *anterior horns*, *posterior horns*,
+*anterior/lateral white matter* and *posterior white matter*. These map onto standard
+spinal-cord anatomy as the anterior (ventral) horn, the posterior (dorsal) horn,
+the anterior plus lateral funiculi (anterolateral funiculus), and the posterior
+(dorsal) funiculus or dorsal columns. At 55-um spot resolution the posterior-horn
+category also absorbs the intermediate grey matter (laminae VII and X); where
+precision matters it is written "posterior horn and intermediate grey matter".
+The authors annotated the two white-matter divisions from cervical cord anatomy and
+MAP2 staining, and the two horn divisions from a combination of transcriptomic
+signatures. No region label in this report is of our own devising.
 
 Our own marker-score region labels (stage 03) are retained in the object for provenance but are **not used for any claim**. Their concordance with the authors' histology is poor (table below, row-percent):
 
@@ -136,7 +148,7 @@ Myeloid expansion is the robust compositional signature. **Neuron loss and astro
 
 Hallmark GSEA on donor-level pseudobulk, **C9-ALS vs sALS**, by author region (NES; FDR in parentheses):
 
-| Pathway | Anterior horn | Other grey | Anterolat. WM | Posterior WM |
+| Pathway | Anterior horn | Posterior horn | Anterolat. WM | Posterior WM |
 |---|:--:|:--:|:--:|:--:|
 | **TNF-α signalling via NF-κB** | **+1.86 (0.014)** | **+2.23 (<0.001)** | +1.25 (0.53) | +1.41 (0.20) |
 | **Inflammatory response** | **+1.82 (0.009)** | +1.51 (0.087) | +1.29 (0.53) | +1.10 (0.73) |
@@ -146,13 +158,13 @@ Hallmark GSEA on donor-level pseudobulk, **C9-ALS vs sALS**, by author region (N
 
 The C9-specific inflammatory signal sits in **grey matter** and disappears in white matter. Its cleanest form is the three-way comparison of NF-κB enrichment:
 
-| Contrast | Anterior horn | Other grey | Anterolat. WM | Posterior WM |
+| Contrast | Anterior horn | Posterior horn | Anterolat. WM | Posterior WM |
 |---|:--:|:--:|:--:|:--:|
 | C9 vs control | +2.55 | +2.41 | +2.81 | +2.67 |
 | sALS vs control | +2.00 | **−1.09** | +2.64 | +2.42 |
 | C9 vs sALS | +1.86 | **+2.23** | +1.25 | +1.41 |
 
-**In other grey matter, C9 engages NF-κB and sALS does not.** That dissociation — rather than a simple quantitative difference — is the strongest C9-specific finding in the dataset.
+**In the posterior horn, C9 engages NF-κB and sALS does not.** That dissociation — rather than a simple quantitative difference — is the strongest C9-specific finding in the dataset.
 
 **No gene survives FDR correction in the C9-vs-sALS anterior-horn contrast** (0 of 11,072; best is *MAN2A1*, padj = 0.059). The signal is pathway-level only, which is the expected ceiling at 4 vs 5 donors. For reference, the same regions yield 219 (C9 vs control) and 325 (sALS vs control) FDR-significant genes, confirming the pipeline detects real effects when they are large.
 
@@ -233,7 +245,7 @@ Because the cohorts are unpaired and the compartments differ, this is a populati
 
 2. **A shared disease axis separates ALS from control** in the myeloid/lipid/complement program (DAM, GPNMB, CHIT1, C1QA/C1QC, APOE), anatomically targeted to **anterolateral white matter** with sparing of the dorsal columns — the signature of motor-tract degeneration and debris clearance. This axis does **not** distinguish C9 from sALS, and because no severity variable was recorded we cannot say whether it scales with disease severity — only that it separates ALS from control.
 
-3. **Genotype acts on inflammatory signalling in grey matter.** The repeat expansion is associated with NF-κB/TNF-α, inflammatory-response and IL-6/JAK/STAT3 enrichment in the anterior horn and other grey matter — and in other grey matter this is a true dissociation, with C9 engaging NF-κB where sALS does not. This is the leading candidate mechanism distinguishing C9-ALS.
+3. **Genotype acts on inflammatory signalling in grey matter.** The repeat expansion is associated with NF-κB/TNF-α, inflammatory-response and IL-6/JAK/STAT3 enrichment in the anterior horn and posterior horn — and in the posterior horn this is a true dissociation, with C9 engaging NF-κB where sALS does not. This is the leading candidate mechanism distinguishing C9-ALS.
 
 4. **Two compartments, two processes.** The myeloid/DAM abundance signal (white matter) and the C9-specific inflammatory signalling (grey matter) are anatomically distinct. The earlier version of this report blended them, because its region labels mixed the two.
 
@@ -348,7 +360,7 @@ CHRNA1 is below detection.
 ### 9.3 Regional localisation
 
 Four of five modules peak in anterolateral white matter. M5 has by far the strongest
-regional preference — higher than the anterior horn, other grey matter and posterior
+regional preference — higher than the anterior horn, posterior horn and posterior
 white matter in **9/9 ALS donors** (all p = 0.004) — matching the DAM/GPNMB/CHIT1
 localisation established in §4.5. M1, M2 and M3 also favour anterolateral WM but with
 much smaller margins, and M4 (vascular) shows no significant regional preference.
@@ -362,12 +374,12 @@ much smaller margins, and M4 (vascular) shows no significant regional preference
 Donor-level contrasts per module per region:
 
 - **ALS vs control:** only **M5** is significant, in the anterior horn (p = 0.005),
-  other grey matter (p = 0.013) and anterolateral WM (p = 0.003). M1–M4 reach
+  posterior horn (p = 0.013) and anterolateral WM (p = 0.003). M1–M4 reach
   significance nowhere (smallest p = 0.077, M1 in anterolateral WM).
 - **Severity trend (control < sALS < C9):** only **M5**, and in all four regions
   (rho = 0.48–0.75, p = 0.041 to <0.001).
 - **C9-ALS vs sALS: no module is significant in any region** (smallest p = 0.063,
-  M4 in other grey matter).
+  M4 in the posterior horn).
 
 ![Figure 10. Module-level condition contrasts across regions; asterisks mark p < 0.05.]({{artifact:art_3de3a96c-64d2-4b23-abe2-64e0ffaf5959}})
 
@@ -473,12 +485,12 @@ Two further tests of whether a C9-versus-sALS effect is hidden by the mean-compa
 Cell2location abundance of its matched cell type (M1 oligodendrocytes, M2 astrocytes + ependymal,
 M3 oligodendrocytes + neurons, M4 endothelium, M5 total myeloid), then donor-level contrasts were
 repeated on the residuals. **No C9-versus-sALS contrast becomes significant after adjustment**
-(all p >= 0.063; smallest is M4 in other grey matter, unchanged at 0.063). Composition was not
+(all p >= 0.063; smallest is M4 in the posterior horn, unchanged at 0.063). Composition was not
 masking a genotype effect.
 
 The adjustment is informative about the *disease* effect, however. For M5, ALS-versus-control
 survives adjustment in anterolateral white matter (p 0.003 -> 0.004) but is abolished in the
-anterior horn (0.005 -> 0.133) and other grey matter (0.013 -> 0.064). Read directly: in grey
+anterior horn (0.005 -> 0.133) and posterior horn (0.013 -> 0.064). Read directly: in grey
 matter the myeloid signal is **compositional** -- more myeloid cells, similar per-cell expression --
 whereas in anterolateral white matter a **cell-intrinsic** component remains, consistent with a
 genuinely activated myeloid state in degenerating tracts rather than simple infiltration.

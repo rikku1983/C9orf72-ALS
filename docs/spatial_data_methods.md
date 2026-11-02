@@ -25,7 +25,7 @@ mitochondrial content per spot. Counts were library-size normalised and log-tran
 (log1p counts per 10,000) for spot-level analyses.
 
 To avoid relying on our own tissue segmentation, we integrated the authors' published per-spot
-metadata by barcode: manual histological region annotations (anterior horns, other grey matter,
+metadata by barcode: manual histological region annotations (anterior horns, posterior horn,
 anterolateral white matter, posterior white matter/dorsal columns, meninges and border),
 TDP-43 pathology neighbourhood labels, and cell-type abundance estimates. The latter were
 produced by the original authors with Cell2location (v0.1.3) against a human spinal cord
