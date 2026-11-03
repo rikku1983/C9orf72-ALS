@@ -1,5 +1,110 @@
 # C9orf72-ALS Project — State / Resume Guide
 
+**Last updated:** end of session 11 (Phase III: C9-versus-sALS resolution, stage 24).
+**Repo:** github.com/rikku1983/C9orf72-ALS (branch `main`). Local: `/home/sunli/C9orf72-ALS`.
+
+Read this block first, then the session-8 guide below it for the older context.
+
+---
+
+## SESSION 11 — Phase III: resolving the C9-versus-sALS direction
+
+**Code:** `code/analysis/24_c9_vs_sals_resolution.py` (self-contained, verified to
+reproduce every number in REPORT.md §10). **Report:** new §10, plus a correction
+appended to §4.6.
+
+### The five things established
+
+1. **Three-group ordering resolves the apparent TREM2/APOE conflict only partly.**
+   GPNMB and CHIT1 run control < sALS < C9 in all four regions; TREM2, APOE and
+   SPI1 run control < C9 < sALS. Both genotypes engage the myeloid programme —
+   the dissociation is which arm. But the bulk causal model compares C9 against
+   sALS **with no control arm**, so the conflict is not dissolved (see item 5).
+
+2. **The Myeloid/DAM cluster is two opposing arms.** 15 genes higher in C9, 26
+   higher in sALS, 11 mixed. The sALS arm is a coherent receptor cascade
+   (TREM2–TYROBP–SYK–NCKAP1L–SPI1 5/5 down in C9; NADPH oxidase 2/2; inflammasome
+   4/4; lineage TFs 2/2). The C9 arm is lipid storage and membrane remodelling
+   (SOAT1, GPNMB, APOC1; ANO6, STX3, NBEAL2, ANXA2, S100A11, EMP3; SLC5A3,
+   SLC38A2; SOD2). **Both arms are induced versus control in both genotypes** —
+   each genotype favours one (crossover, descriptive p 1.4e-7).
+   C9orf72, SMCR8 and WDR41 themselves show no reduction in C9 donors, so the
+   lysosomal loss-of-function interpretation is a hypothesis, not a finding.
+
+3. **CORRECTION — the mean-z score and pseudobulk DE weight genes differently.**
+   They agree gene by gene (r +0.48 to +0.71) but can differ in sign at cluster
+   level. The score is a mean dominated by a few genes: top 5 of 52 contribute
+   87% of the difference in posterior WM, SOD2 alone 36%. Cause: a typical
+   myeloid gene is detected in only 3.8–6.6% of spots. **Z-scoring equalises each
+   gene's contribution to the score LEVEL, not to the between-group DIFFERENCE** —
+   an earlier claim to the contrary was wrong. Figure 12 is unaffected (no
+   C9-vs-sALS comparison in it is significant; smallest p 0.190).
+
+4. **Do NOT regress out Cell2location composition.** Collinearity rho(myeloid %,
+   DAM expression) = +0.94 in anterior/lateral WM (12% variance left); the
+   covariate is a projection of the same matrix; and abundance is a mediator, not
+   a confounder. State leakage into the deconvolution is real but not dominant
+   (lineage markers +0.62 vs activation +0.65). IBA1 immunofluorescence cannot
+   arbitrate — the categorical is saturated and the continuous intensity does not
+   track C2L microglia (rho -0.01 within section). Report marginal AND
+   abundance-conditional side by side instead.
+
+5. **Aggregation geometry explains much of the myeloid cross-platform conflict.**
+   Whole-section pseudobulk (bulk-like) moves Myeloid/DAM from -0.106 to **+0.012**;
+   Astrocyte (-0.283 -> -0.208) and Oligodendrocyte/myelin (-0.223 -> -0.280) do
+   not reconcile. Composition accounts for only 10-14%; the rest is log-of-a-sum
+   weighting. Winner's curse is ruled out (it predicts shrinkage, not sign flip).
+
+### NEXT STAGE — priority order
+
+**On the user's side (highest value first):**
+  1. Score the **two arms separately** in the 156-sample bulk cohort. If the
+     C9-preferring arm's a-path is stronger than the sALS-preferring arm's, that
+     replicates the dissociation across platforms without either dataset
+     reversing. Gene lists: `results/tables/myeloid_two_arms_genes.csv`.
+  2. Test the **denominator effect**: regress out a neuronal-content proxy
+     (NEFL, SNAP25, SYT1, RBFOX3) and see whether the 118-gene a-paths attenuate.
+  3. Re-estimate a-paths for TREM2, APOE, SPI1, TYROBP, SYK with **parents
+     restricted to non-gene covariates**.
+  4. Check whether MuSiC proportions were nodes or covariates in the network
+     (potential circularity — derived from the same expression matrix).
+  5. RIN/PMI regression on the ribosomal eigengene; rerun mediation with cluster
+     eigengenes; report homeostatic:activation ratio alongside MuSiC proportions.
+
+**On this side:**
+  - Request from the Gate lab: **per-cell IBA1 area and roughness values with
+    donor identity**, split by genotype. Expression-independent state measure,
+    already acquired, never reported by subtype. The published IBA1/CD68/DAPI
+    counts cannot serve (n = 2 vs 4, fields-of-view pseudoreplication, ALS-vs-control
+    only, and CD68 is itself an activation marker).
+  - Optional stage 25: limma-voom with duplicateCorrelation(block = donor) for
+    pooled-region inference; per-region `~myeloid_fraction + condition` as a
+    sensitivity analysis only (NOT as the primary model — see item 4).
+  - Housekeeping: `719e52c` and `a5f2883` (2026-10-28) are labelled "Stage 24"
+    and "Stage 23"; stage numbers 23 and 24 are each used twice. Renumber once.
+  - Rerun stage 17 with mean-z instead of `sc.tl.score_genes` for consistency.
+  - Rebuild stage-18 `spatial_DAM_GPNMB_CHIT1_quant.png` GPNMB panel on pseudobulk.
+  - Compositional reanalysis of cell proportions (CLR / Dirichlet / scCODA).
+
+### Talk-ready vs not
+
+**Ready:** GPNMB and CHIT1 exceeding sALS in all four regions (agrees with bulk);
+ALS-versus-control myeloid expansion (four independent lines); the CD68
+pre-specified protein test (d +0.82, one-sided p 0.095).
+**Not ready:** the TREM2/APOE direction; any single-number summary of the myeloid
+cluster; the two-arm structure (manuscript, not talk).
+
+### Technical notes that cost time this session
+  - OpenMP guards MUST be set before importing numpy in a fresh kernel
+    (OMP/OPENBLAS/MKL/NUMBA_NUM_THREADS=1, KMP_AFFINITY=disabled,
+    OMP_PROC_BIND=FALSE) or the kernel dies with OMP error #179.
+  - `auth_cleaned_IBA1_binary` is **not binary** — it is a continuous intensity.
+    `auth_IBA1_positive` is saturated at 96–99% and carries no information.
+  - Decode categoricals as `np.where(codes >= 0, categories[codes], None)`;
+    `auth_manual` stores 3,121 missing values as code -1.
+
+---
+
 **Last updated:** end of session 8 (spatial TDP-43 coupling stage 17 + PBMC arm complete + literature review on cortex vs spinal cord).
 **Repo:** github.com/rikku1983/C9orf72-ALS (branch `main`). Local: `/home/sunli/C9orf72-ALS`.
 **Latest commit before this note:** `358056b` (Stage 17).

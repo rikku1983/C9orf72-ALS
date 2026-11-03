@@ -217,6 +217,8 @@ Testing the authors' per-spot TDP-43 pathology annotation (Ring / adjacent / dis
 
 Two caveats bound this test: `auth_TDP43_mean` is an immunofluorescence intensity whose disease direction is ambiguous (TDP-43 is normally nuclear and is cleared in pathology), and pathology-bearing spots are genuinely sparse (417 Ring, 472 adjacent across all ALS).
 
+**Correction (session 11).** Stage 17 treated the four levels as an ordinal severity scale, `Not_selected < TDP43_distant < TDP43_adjacent < Ring`. That ordering is wrong. The levels are **concentric dilation rings measured outward from a TDP-43⁺ spot**, identical to the micron in every section with zero variance: `TDP43_positive` 0 µm, `TDP43_adjacent` 112 µm, `Ring` 200 µm, `TDP43_distant` 330 µm, `Not_selected` ~2,600 µm median. `Ring` is a *distance* band sitting between adjacent and distant, not the most severe class. The negative conclusion above is unaffected — it rests on donor-level sign inconsistency, not on the ordering — but any reuse of that encoding must not treat `Ring` as a severity tier. See §10.6 and `docs/tdp43_perilesional_note.md` for the correct geometry and the perilesional result that followed from it.
+
 ![Figure 5. TDP-43 pathology coupling: spot-level (misleading) versus donor-level (honest) comparison.]({{artifact:art_79cf0856-9a4e-4b82-9583-238d3cc9b8b6}})
 
 ### 4.7 Protein layer confirms myeloid activation
@@ -567,3 +569,288 @@ solution for *mediation* questions.
 region, module contrast statistics, blood detectability, panel/detection status) ·
 `mediator_modules.csv` · `mediator_celltype_correlation.csv` · `mediator_region_profile.csv` ·
 `mediator_module_contrasts.csv`. **Code:** `code/analysis/21_mediator_modules.py`.
+
+---
+
+## 10. Phase III: resolving the C9-versus-sALS direction (stage 24)
+
+Phase II established *where* the 118 bulk mediator genes live and *that* the
+myeloid module tracks disease. Phase III addresses the question the project
+actually turns on — how the panel behaves in **C9-ALS versus sALS** — and
+resolves three apparent contradictions: one with the bulk causal model, one
+between two of our own summary statistics, and one about whether cell-type
+composition should be adjusted away. **Code:** `code/analysis/24_c9_vs_sals_resolution.py`.
+
+### 10.1 The comparator, not the data, created the first conflict
+
+The bulk Bayesian-network model nominates TREM2 and APOE as driven *up* by the
+expansion; our C9-versus-sALS contrast put both *down*. Resolving all three
+groups shows both statements describe the same data:
+
+| gene | ordering | above control | above sALS |
+|---|---|:--:|:--:|
+| **GPNMB** | control < sALS < C9 in all 4 regions | 4/4 | **4/4** |
+| **CHIT1** | control < sALS < C9 in all 4 regions | 4/4 | **4/4** |
+| APOC1 | control < sALS < C9 in 3 of 4 | 4/4 | 3/4 |
+| CD68 | control < C9 < sALS mostly | 4/4 | 1/4 |
+| **TREM2** | control < C9 < sALS | 2/4 | **0/4** |
+| **APOE** | control < C9 < sALS | 3/4 | **0/4** |
+| SPI1 | control < C9 < sALS | 4/4 | 0/4 |
+
+APOE reaches +0.94 over control in anterior/lateral WM (p = 0.034). Both
+genotypes engage the myeloid programme; the dissociation is **which arm of it**.
+C9-versus-sALS differences reaching nominal significance: APOE in posterior horn
+and posterior WM (both p = 0.016, C9 lower) and TREM2 in posterior WM (p = 0.016).
+
+The bulk model's a-path is estimated **C9 against sALS with no control arm**, so
+this does not fully reconcile the two platforms — see §10.7. It does establish
+that "the expansion raises TREM2 and APOE" is true in the spatial data relative
+to baseline.
+
+**Table:** `key_genes_three_way.csv`.
+
+### 10.2 Panel-wide differential expression, C9 versus sALS
+
+With BH applied *within the panel* (97–106 genes rather than ~13,000), **10 gene ×
+region results survive, 9 of them lower in C9**: posterior horn PLLP −1.21 and
+APOBR −1.87; posterior WM TREM2 −1.20, APOBR −1.16, PYCARD −1.05, PLLP −1.02,
+TYROBP −0.97, NCF2 −0.90, SDC3 −0.70, EDIL3 +0.58. Only TREM2 and NCF2 also clear
+genome-wide FDR. Anterior horn and anterior/lateral WM yield nothing.
+
+At set level the panel is coordinately **lower in C9** in all four regions,
+relative to the genome-wide median in the same contrast (Wilcoxon signed-rank):
+anterior horn −0.19 (p = 0.0003), posterior horn −0.29 (p < 0.0001),
+anterior/lateral WM −0.13 (p = 0.0034), posterior WM −0.33 (p < 0.0001). Nominal
+p < 0.05 counts are 7, 11, 19 and 26 against ~5 expected.
+
+By cluster:
+
+| cluster | anterior horn | posterior horn | ant/lat WM | posterior WM |
+|---|--:|--:|--:|--:|
+| Astrocyte (n = 28–30) | −0.42 | −0.16 | −0.31 | −0.39 |
+| Oligodendrocyte/myelin (n = 22) | −0.34 | −0.31 | −0.32 | −0.13 |
+| **Myeloid/DAM (n = 46–51)** | **+0.05** | −0.34 | **+0.06** | −0.32 |
+
+All astrocyte and oligodendrocyte tests are significant; the myeloid cluster is
+the only one that is flat in the two compartments where disease is active.
+
+Posterior WM carries 8 of the 10 significant genes despite being the least
+disease-involved region. Treat that cautiously: in heavily affected compartments
+both genotypes may be near ceiling, compressing the between-genotype difference,
+so the apparent dorsal-column localisation may be a dynamic-range effect.
+
+**Tables:** `panel118_C9vsSALS_cluster_summary.csv` · `panel118_C9vsSALS_significant_genes.csv`.
+
+### 10.3 The myeloid cluster is two opposing arms
+
+The flat myeloid median conceals a split. Classifying each of the 52 genes by
+direction in ≥3 of 4 regions gives **15 higher in C9, 26 higher in sALS, 11 mixed**.
+
+The sALS-preferring arm is a receptor-driven innate-immune cascade, coherent end
+to end: **TREM2–TYROBP(DAP12)–SYK–NCKAP1L–SPI1 (5/5 down in C9)**, NADPH oxidase
+NCF2 and CYBA (2/2), inflammasome and anaphylatoxin receptor PYCARD, C3AR1,
+ADORA3, TNFRSF14 (4/4), and the lineage transcription factors SPI1 and CEBPA
+(2/2) — a sensing receptor, its ITAM adaptor, the kinase it recruits, the actin
+machinery of the phagocytic cup, the oxidative burst and the inflammasome.
+
+The C9-preferring arm is a lipid-loaded, osmotically stressed,
+membrane-remodelling state without that signalling: ANO6, STX3, NBEAL2, ANXA2,
+S100A11, EMP3 (6/7 up), SLC5A3 and SLC38A2, SOAT1 with GPNMB and APOC1, and SOD2.
+
+**The crossover is the result.** Both arms are induced in disease in both
+genotypes (96–100% of genes up versus control); each genotype simply leans on a
+different one:
+
+| arm | sALS vs control | C9 vs control |
+|---|--:|--:|
+| C9-preferring (n = 15) | +0.59 | **+1.05** |
+| sALS-preferring (n = 26) | **+1.06** | +0.61 |
+
+So the correct statement is not "C9 has less myeloid activation" but **"C9 and
+sporadic myeloid cells are activated comparably, into different states."**
+
+This is consistent with C9orf72's known role — a complex with SMCR8 and WDR41
+regulating RAB GTPases, autophagy and lysosomal homeostasis, expressed most
+highly in myeloid cells. Impaired lysosomal degradation would accumulate
+undigested lipid (the SOAT1/GPNMB/APOC1 arm) while failing to sustain receptor
+signalling that depends on intact endolysosomal trafficking. **Our data cannot
+confirm the loss-of-function premise**: C9orf72 itself shows no reduction in C9
+donors in any region (+0.06 to +0.41 versus sALS, all p > 0.28), nor do SMCR8 or
+WDR41. Expression is low (baseMean 12–78) and the probe panel does not resolve
+repeat-containing transcript variants.
+
+Caveats: the split is by direction consistency, not significance; the crossover
+p of 1.4 × 10⁻⁷ treats co-regulated genes as independent and is descriptive, not
+calibrated; n = 4 versus 5 donors. The arms do not differ in expression level
+(median baseMean 99 versus 75, p = 0.19), so this is not a detection artefact.
+
+![Figure 15. The Myeloid/DAM mediator genes split into two opposing arms. (a) Per-region log2FC, C9-ALS versus sALS, for all 52 genes. (b) Both arms are induced relative to control in both genotypes, but each genotype favours one.](/home/sunli/.claude-science/orgs/3ca4ddc0-1543-43b6-b716-d71f59421156/artifacts/proj_76eadaefb773/0c38320c-7a73-4c1d-8cd4-70e4592eda63/v41efdc40_myeloid_two_arms.png)
+
+**Table:** `myeloid_two_arms_genes.csv`.
+
+### 10.4 Correction: the mean-z score and pseudobulk DE weight genes differently
+
+The per-spot mean-z score (Figure 12, `donor_region_5features_clean.png`) and the
+pseudobulk median log2FC disagree on sign for the myeloid cluster in the two
+posterior regions. Both are correct; they answer different questions.
+
+| region | score diff (C9 − sALS) | median LFC | % genes up | top-5 share of the score difference |
+|---|--:|--:|--:|--:|
+| anterior horn | +0.039 | +0.068 | 54% | 51% |
+| posterior horn | **+0.029** | **−0.326** | 29% | 63% |
+| anterior/lateral WM | +0.152 | +0.075 | 60% | 29% |
+| posterior WM | **+0.020** | **−0.313** | 27% | **87%** |
+
+Gene by gene the two measures agree (correlation +0.48 to +0.71 in every region).
+The conflict is in the combination: the score is a **mean** over 52 genes that a
+handful dominate — in posterior WM, SOD2 alone contributes 36% — while the median
+log2FC gives each gene one vote and the majority move down.
+
+The mechanism is detection. A typical myeloid gene is detected in only **3.8–6.6%
+of spots**, so >93% sit at the gene's floor and carry no between-donor
+information. Genes that move the score are those either widely detected (SOD2,
+41.6% of spots) or with extreme right tails (CHIT1 ceiling z = +16.8 at 2.2%
+detection).
+
+**This corrects an earlier claim.** Z-scoring equalises each gene's contribution
+to the score *level* (1/52 each); it does **not** equalise contributions to the
+between-group *difference*, which here range from 36% to zero. A single summary
+of a bimodal set is an artefact of the chosen weighting — the per-arm breakdown
+in §10.3 is the honest readout.
+
+Figure 12 is unaffected: no C9-versus-sALS comparison in it is significant
+(smallest p = 0.190), and its ALS-versus-control claims hold under both methods.
+
+**Table:** `score_vs_pseudobulk_decomposition.csv`.
+
+### 10.5 Cell-type composition should not be regressed out
+
+Cell2location shares MuSiC's structural limitation — a reference-based linear
+mixture with fixed per-cell-type signatures, so disease-driven state shifts have
+nowhere to go but the abundance estimate. Three findings bound how much that
+matters and settle the adjustment question.
+
+**State leakage is real but not dominant.** If the myeloid estimate were mostly
+reading the activation programme it would track activation markers far better
+than lineage markers. It does not: mean ρ against total myeloid is **+0.62 for
+lineage/homeostatic** (CSF1R, SPI1, AIF1, C1QA/B, P2RY12, TMEM119, CX3CR1,
+FCER1G, LAPTM5) versus **+0.65 for activation/DAM**. The authors' reference also
+carries ProliferatingMicroglia as a separate type, keeping some state diversity
+in the reference rather than in the abundance.
+
+**No external calibration is available.** The IBA1 immunofluorescence channel
+cannot arbitrate: `auth_IBA1_positive` is saturated (control 0.994, sALS 0.969,
+C9 0.990) and the continuous intensity — `auth_cleaned_IBA1_binary`, misnamed,
+it is not binary — does not track C2L microglia within section (ρ −0.01;
++0.17 per spot).
+
+**The adjustment is not defensible**, for three reasons:
+
+1. *Collinearity.* ρ(myeloid %, DAM expression) is **+0.94** in anterior/lateral
+   WM (12% of variance surviving), +0.85 anterior horn (26%), +0.62 posterior
+   horn, +0.47 posterior WM. The residual in the best-powered region is dominated
+   by deconvolution error.
+2. *Non-independence.* The fraction is a projection of the same expression matrix
+   onto reference signatures, so the residual is the component orthogonal to
+   those signatures, not a clean state estimate.
+3. *Mediator, not confounder.* If the expansion changes myeloid number, that is
+   part of the mechanism; adjusting for a descendant of the exposure blocks the
+   path being estimated.
+
+**Report the pair instead.** Conditioning on myeloid fraction *strengthens* the
+C9 excess for GPNMB (+0.29 → +0.52) and CHIT1 (+0.38 → +0.70) and leaves the C9
+deficit for TREM2 (−0.42 → −0.47) and APOE (−0.31 → −0.38) intact — so both are
+per-cell state effects, and the decomposition is more informative than either
+number alone.
+
+Companion-paper imaging does not settle it either. The IBA1⁺/CD68⁺/DAPI⁺ counts
+are **not stereology** — 2D profile counting on single 5 µm sections, no optical
+dissector — with n = 2 controls and 4 ALS cases, significance tested on fields of
+view rather than samples, and a size bias aligned with the hypothesis (ALS IBA1⁺
+cells are reported larger). CD68 is itself an activation marker, so the triple
+label counts the *activated subset*, not cell number. Every IHC comparison in the
+paper is ALS versus control; **none is split by genotype.** The genuinely useful
+orthogonal measure would be the per-cell IBA1 area and roughness values split by
+subtype — expression-independent, already acquired, not yet reported that way.
+
+**Table:** `deconvolution_state_confound.csv`.
+
+### 10.6 TDP-43 geometry and the perilesional halo
+
+The authors' TDP-43 annotation is **concentric dilation rings measured outward
+from TDP-43⁺ spots**, not a severity scale (see the §4.6 correction). Using the
+categorical annotation rather than a recomputed distance, six sections qualify.
+Within rings 0–3 the Myeloid/DAM score rises *with* distance from the lesion in
+**5/5 sections** (mean ρ +0.137) and GPNMB in 5/5 (+0.089). The fine-binned
+profile peaks at ring 3–4 (300–400 µm): neurons fall 1.99 pp while myeloid gains
+2.03 pp — essentially the whole displaced fraction — with oligodendrocytes still
+losing 0.88 pp and astrocytes gaining only 0.64 pp, so the gain is myeloid-specific
+rather than generic displacement. Partialling neuron fraction leaves +0.127, still
+5/5. The peak lies beyond microglial process reach (~50–100 µm), indicating a
+local reactive field rather than direct ensheathment. Parked for a future
+manuscript, not for the SfN talk. **Code:** `code/analysis/23_tdp43_perilesional.py`;
+**note:** `docs/tdp43_perilesional_note.md`.
+
+### 10.7 Reconciling with the bulk causal model — what remains open
+
+The bulk model compares **C9 against sALS with no control arm**, so §10.1 does not
+dissolve the conflict: most of the 118 genes are driven *up* there and trend
+*down* here for the same contrast. Two findings constrain the explanation.
+
+**Aggregation geometry accounts for much of the myeloid discrepancy.** The bulk
+cohort is whole cervical cord; this analysis is region-stratified. Pooling all
+four regions into one pseudobulk per donor — mimicking bulk RNA-seq — changes the
+direction:
+
+| cluster | region-stratified | whole-section (bulk-like) | % up, stratified → pooled |
+|---|--:|--:|--:|
+| **Myeloid/DAM** | −0.106 | **+0.012** | 40% → 50% |
+| Astrocyte | −0.283 | −0.208 | 10% → 17% |
+| Oligodendrocyte/myelin | −0.223 | −0.280 | 36% → 32% |
+
+The myeloid conflict largely dissolves once the units match; the astrocyte and
+oligodendrocyte clusters do not. C9 sections differ in regional sampling (+8.0 pp
+posterior WM, −5.9 pp anterior/lateral WM versus sALS), but a shift-share
+decomposition attributes only **10–14%** of the signal to composition. The larger
+part is that log-CPM on pooled RNA weights by transcript abundance, so log of a
+sum is not the mean of logs — the same weighting problem as §10.4 in another form.
+
+**Winner's curse is not the explanation.** The 118 genes were selected for large
+effects in the bulk discovery data, so attenuation on replication is expected —
+but selection predicts shrinkage toward zero, not sign reversal. The panel shift
+is systematically negative relative to the genome-wide median (−0.13 to −0.33),
+which is directional.
+
+Open items, in priority order:
+
+1. **Score the two arms separately in the 156-sample bulk cohort.** If the
+   C9-preferring arm's a-path is systematically stronger than the
+   sALS-preferring arm's, that replicates the dissociation across platforms
+   without requiring either dataset to reverse — a far more robust claim than
+   sign agreement on individual genes.
+2. **Test the denominator effect in bulk.** If C9 cords lose more neuronal RNA,
+   every non-neuronal gene rises in CPM with no per-cell change. Regress out a
+   neuronal-content proxy (NEFL, SNAP25, SYT1, RBFOX3) and see whether the
+   a-paths attenuate. The region-stratified design here is immune to this.
+3. **Re-estimate the a-paths for TREM2, APOE, SPI1, TYROBP and SYK with parents
+   restricted to non-gene covariates.** Conditioning on a mediator or collider
+   can flip a sign; conditioning on myeloid abundance alone did not (§10.5), but
+   that is not what the network conditions on.
+4. **Astrocyte and oligodendrocyte clusters are the hard conflict** — they survive
+   the aggregation fix, and they are where our measurement is weakest (astrocyte
+   deconvolution validated at only +0.31 against canonical markers, with no
+   protein or imaging corroboration). Unresolved, not evidence against the model.
+
+**Tables:** `aggregation_reconciliation.csv` · `myeloid_wholesection_vs_region.csv`.
+
+### 10.8 What is talk-ready and what is not
+
+**Ready.** GPNMB and CHIT1 exceed sALS in all four regions and agree with the bulk
+model in direction. The ALS-versus-control myeloid expansion is supported by
+composition, score, pseudobulk and the companion paper's imaging. The CD68 protein
+test is fully pre-specifiable (the only antibody in the 35-plex whose gene is among
+the 118) and gives d = +0.82 one-sided p = 0.095 — underpowered but honest.
+
+**Not ready.** The TREM2/APOE direction, pending §10.7. Any single-number summary
+of the myeloid cluster (§10.4). The two-arm structure — interesting, but to be held
+for a manuscript once the cross-platform reconciliation is attempted.
